@@ -1,0 +1,2 @@
+microsoft.visualbasic.compatibility.data.dll
+microsoft.visualbasic.compatibility.dll

@@ -1,0 +1,14 @@
+14:18 23/07/2006
+
+v3.8 new features and fixed bugs (from v3.7) :
+
+1.  Restore the F3 old behaviour of v3.6 (search non-volatile). Change search volatile behaviour in Ctrl-F3.
+2.  Add run macro multiple times feature.
+3.  Enhance macro undo/redo feature.
+4.  Memorize the position of each file while saving the session.
+5.  Add feature which creates a new file if file to open does not exist (from command line).
+6.  Bug fixed : crash while NPP minimized & open file from explorer context menu.
+7.  Bug fixed : User Defined Dialog's crash problem
+8.  Change system tray icon behaviour : One Click to show notepad++ windows.
+9.  Add Block comment/uncomment and Stream comment feature for User define language.
+10. Fix Macro recording bug : paste command is recorded 2 times.

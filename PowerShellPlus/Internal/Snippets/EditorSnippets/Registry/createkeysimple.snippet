@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Create a new registry key</Title>
+			<Shortcut />
+			<Description>Checks whether a given registry key exists, and if it is missing, creates that key</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>Key to create</ToolTip>
+					<Default>HKCU:\Software\Test</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="4"><![CDATA[if (Test-Path '$param1$') {
+	"Registry key $param1$ already exists."
+} else {
+	md $param1$
+}]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

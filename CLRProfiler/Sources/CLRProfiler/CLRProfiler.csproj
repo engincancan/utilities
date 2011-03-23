@@ -1,0 +1,394 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>0</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>C:\Program Files (x86)\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\\rules</CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>0</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>C:\Program Files (x86)\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\\rules</CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{147EF91E-C9E4-4E8E-B5E9-5D99D8DB3769}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>CLRProfiler</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CLRProfiler</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>0</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>0</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <FxCopRules>
+    </FxCopRules>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>0</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>C:\Program Files (x86)\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\\rules</CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>0</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>C:\Program Files (x86)\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\\rules</CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgeHistogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllocationDiff.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BitReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BitWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CallTreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommentRangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiffCallTreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiffDataNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DiffTreeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Edge.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetParameterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindRoutineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GraphBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GraphViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistogramViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KillProcessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NamedManualResetEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectGraph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlacedToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProfileServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Readers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReadNewLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RegisterDLL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SaveFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SortAndHighlightSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeLineViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vertex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewByAddressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCommentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitingForConnectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="AgeHistogram.resx">
+      <DependentUpon>AgeHistogram.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallTreeForm.resx">
+      <DependentUpon>CallTreeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommentRangeForm.resx">
+      <DependentUpon>CommentRangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiffCallTreeForm.resx">
+      <DependentUpon>DiffCallTreeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiffTreeListView.resx">
+      <DependentUpon>DiffTreeListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterForm.resx">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetParameterForm.resx">
+      <DependentUpon>SetParameterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindRoutineForm.resx">
+      <DependentUpon>FindRoutineForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionFilter.resx">
+      <DependentUpon>FunctionFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionFind.resx">
+      <DependentUpon>FunctionFind.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphViewForm.resx">
+      <DependentUpon>GraphViewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistogramViewForm.resx">
+      <DependentUpon>HistogramViewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KillProcessForm.resx">
+      <DependentUpon>KillProcessForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListViewer.resx">
+      <DependentUpon>ListViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlacedToolTip.resx">
+      <DependentUpon>PlacedToolTip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileServiceForm.resx">
+      <DependentUpon>ProfileServiceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveFileForm.resx">
+      <DependentUpon>SaveFileForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectColumns.resx">
+      <DependentUpon>SelectColumns.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SortAndHighlightSelector.resx">
+      <DependentUpon>SortAndHighlightSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryForm.resx">
+      <DependentUpon>SummaryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeLineViewForm.resx">
+      <DependentUpon>TimeLineViewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeListView.resx">
+      <DependentUpon>TreeListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewByAddressForm.resx">
+      <DependentUpon>ViewByAddressForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCommentsForm.resx">
+      <DependentUpon>ViewCommentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFilter.resx">
+      <DependentUpon>ViewFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitingForConnectionForm.resx">
+      <DependentUpon>WaitingForConnectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

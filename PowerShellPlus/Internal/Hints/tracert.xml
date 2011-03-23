@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <hinttable>
+    <option>-d</option>
+    <description>Löst Adressen nicht in Hostnamen auf.</description>
+  </hinttable>
+  <hinttable>
+    <option>-h</option>
+    <description>Max. Abschnitte  Maximale Anzahl an Abschnitten bei Zielsuche</description>
+  </hinttable>
+  <hinttable>
+    <option>-j</option>
+    <description>Hostliste        "Loose Source Route" gemäß Hostliste (nur IPv4)</description>
+  </hinttable>
+  <hinttable>
+    <option>-w</option>
+    <description>Zeitlimit        Zeitlimit in Millisekunden für eine Antwort</description>
+  </hinttable>
+  <hinttable>
+    <option>-R</option>
+    <description>Verfolgt Rundwegpfad (nur IPv6).</description>
+  </hinttable>
+  <hinttable>
+    <option>-S</option>
+    <description>Quelladresse     Zu verwendende Quelladresse (nur IPv6).</description>
+  </hinttable>
+  <hinttable>
+    <option>-4</option>
+    <description>Erzwingt die Verwendung von IPv4.</description>
+  </hinttable>
+  <hinttable>
+    <option>-6</option>
+    <description>Erzwingt die Verwendung von IPv6.</description>
+  </hinttable>
+</NewDataSet>

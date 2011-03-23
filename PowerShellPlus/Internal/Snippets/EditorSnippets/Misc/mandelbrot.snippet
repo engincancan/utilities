@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Mandelbrot Set</Title>
+			<Shortcut />
+			<Description>creates a mandelbrot set </Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Code Language="PowerShell" Kind="10"><![CDATA[$i=$j=$r=$x=$y=[float]-16; 
+$colors="Black","DarkBlue","DarkGreen","DarkCyan","DarkRed","DarkMagenta","DarkYellow","Gray","DarkGray","Blue","Green","Cyan","Red","Magenta","Yellow","White"
+while(($y++) -lt 15) {
+    for($x=0; ($x++) -lt 84; 
+        write-host " " -backgroundcolor ($colors[$k -band 15]) -nonewline) {
+        $i=$k=$r=[float]0;
+        do{$j=$r*$r-$i*$i-2+$x/25;$i=2*$r*$i+$y/10;$r=$j} 
+        while (($j*$j+$i*$i) -lt 11 -band ($k++) -lt 111)
+    }
+    " "
+}]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

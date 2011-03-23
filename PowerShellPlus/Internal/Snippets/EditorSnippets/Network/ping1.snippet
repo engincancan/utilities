@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Ping using ping.exe</Title>
+			<Shortcut />
+			<Description>Use ping.exe to check whether a computer is online</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>name of your new ping function</ToolTip>
+					<Default>MyPing</Default>
+				</Literal>
+				<Literal>
+					<ID>param2</ID>
+					<ToolTip>number of ping requests</ToolTip>
+					<Default>1</Default>
+				</Literal>
+				<Literal>
+					<ID>param3</ID>
+					<ToolTip>timeout for each ping</ToolTip>
+					<Default>500</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="15"><![CDATA[function $param1$($ip = $(Throw "Submit a valid IP address or computer name")) {
+	ping.exe $ip -n $param2$ -w $param3$ > $null
+	if ($LASTEXITCODE -eq 0) {
+		$TRUE
+	} else {
+		$FALSE
+	}
+}
+
+$param1$ 10.12.143.1
+$param1$ localhost
+$param1$ www.powershell.com
+$param1$ 127.0.0.1
+$param1$ www.notavailableIamsorry.de
+]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

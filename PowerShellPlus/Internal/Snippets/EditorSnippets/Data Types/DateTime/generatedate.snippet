@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Generate Date</Title>
+			<Shortcut />
+			<Description>Generate a date variable for any given date and independent of current locale</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>Year</ToolTip>
+					<Default>2008</Default>
+				</Literal>
+				<Literal>
+					<ID>param2</ID>
+					<ToolTip>Month</ToolTip>
+					<Default>8</Default>
+				</Literal>
+				<Literal>
+					<ID>param3</ID>
+					<ToolTip>Day</ToolTip>
+					<Default>1</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="2"><![CDATA[
+$date = new datetime($param1$,$param2$,$param3$)
+$date]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

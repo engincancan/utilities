@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<NDependProLicense>
+  <LicenseId>YL89M29WR</LicenseId>
+  <CompanyName>James Kovacs MVP personnal licemse</CompanyName>
+  <CompanyAddress1>4015 3rd av SW</CompanyAddress1>
+  <CompanyAddress2 />
+  <City>Calgary</City>
+  <StateProvince />
+  <ZipPostalCode>AB T3C 0B3</ZipPostalCode>
+  <Country>Canada</Country>
+  <ContactFirstName>James</ContactFirstName>
+  <ContactLastName>Kovacs</ContactLastName>
+  <ContactEmail>jkovacs@post.harvard.edu</ContactEmail>
+  <ContactAlternativeEmail />
+  <ContactPhone>1 403 397 3177</ContactPhone>
+  <LicenseQuantity>1</LicenseQuantity>
+  <NDependVersion>3</NDependVersion>
+  <OrderDate>06/04/2007 14:56:00</OrderDate>
+  <Signature>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+         <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+         <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+         <Reference URI="">
+           <Transforms>
+             <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+           </Transforms>
+           <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+           <DigestValue>4OZfliMmnbKgjE0v2VDkpz85y5M=</DigestValue>
+         </Reference>
+       </SignedInfo>
+       <SignatureValue>oQq6ISO+MCpTuI0Pyfu7BcBZd7A1uNaXXI6yORFVEEoYkOCPwlDsgjcACnxtz7G5DZkKZCUDSY7K5bzZ0voLfcb7h2XNjyJ0l6gFmnOuQSlU4BMww058o35htsqCoGWaLBPp1NqGw5b3kF76spP1+q0ivcRS2hiw5qlQH4tSviQ=2</SignatureValue>
+      </Signature>
+</Signature>
+</NDependProLicense>

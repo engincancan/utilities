@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Show Profile</Title>
+			<Shortcut />
+			<Description>Lists content of default profile</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>Message text if no profile is available</ToolTip>
+					<Default>No private profile available at '$profile'</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="4"><![CDATA[if (Test-Path $profile) {
+	Get-Content $profile
+ } else {
+	"$param1$"
+}]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

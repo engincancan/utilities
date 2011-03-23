@@ -1,0 +1,278 @@
+
+---------- .\CSCONSTRUCTORINFO.CS
+		protected new static string ToString(AccessModifiers access) {
+			case AccessModifiers.na:
+			case AccessModifiers.Unknown:
+			case AccessModifiers.Unassigned:
+				return SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+		protected new static string ToHtml(AccessModifiers access) {
+			case AccessModifiers.na:
+			case AccessModifiers.Unknown:
+			case AccessModifiers.Unassigned:
+				return SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+
+---------- .\CSEVENTINFO.CS
+		protected static string ToString(AccessModifiers access) {
+			case AccessModifiers.na:
+			case AccessModifiers.Unknown:
+			case AccessModifiers.Unassigned:
+				return SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+		protected static string ToHtml(AccessModifiers access) {
+			case AccessModifiers.na:
+			case AccessModifiers.Unknown:
+			case AccessModifiers.Unassigned:
+				return SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+
+---------- .\CSFIELDINFO.CS
+		protected static string ToString(AccessModifiers access) {
+			case AccessModifiers.na:
+			case AccessModifiers.Unknown:
+			case AccessModifiers.Unassigned:
+				return SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+		protected static string ToHtml(AccessModifiers access) {
+			case AccessModifiers.na:
+			case AccessModifiers.Unknown:
+			case AccessModifiers.Unassigned:
+				return SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+
+---------- .\CSMETHODINFO.CS
+		protected new static string ToString(AccessModifiers access) {
+			case AccessModifiers.na:
+			case AccessModifiers.Unknown:
+			case AccessModifiers.Unassigned:
+				return SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+		protected new static string ToHtml(AccessModifiers access) {
+			case AccessModifiers.na:
+			case AccessModifiers.Unknown:
+			case AccessModifiers.Unassigned:
+				return SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+
+---------- .\CSPARAMETERINFO.CS
+
+---------- .\CSPROPERTYINFO.CS
+		protected static string ToString(AccessModifiers access) {
+			case AccessModifiers.na:
+			case AccessModifiers.Unknown:
+			case AccessModifiers.Unassigned:
+				return SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+		protected static string ToHtml(AccessModifiers access) {
+			case AccessModifiers.na:
+			case AccessModifiers.Unknown:
+			case AccessModifiers.Unassigned:
+				return SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+
+---------- .\CSTYPEINFO.CS
+		public new static string ToString(AccessModifiers access) { 
+			return SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+		public new static string ToHtml(AccessModifiers access) {
+			string result = SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+
+---------- .\GENCONSTRUCTORINFO.CS
+				"Scope=" + Enum.GetName(typeof(AccessModifiers), _access) + ":" +
+
+---------- .\GENEVENTINFO.CS
+		protected AccessModifiers	_access			= AccessModifiers.Unassigned;
+		public static AccessModifiers GetAccess(MethodInfo addmethod) {
+				return AccessModifiers.Private;
+				return AccessModifiers.Public;
+				return AccessModifiers.Protected;
+				return AccessModifiers.Internal;
+				return AccessModifiers.ProtectedInternal;
+				return AccessModifiers.Unknown;
+			result += Enum.GetName(typeof(AccessModifiers), _access);
+				"Scope=" + Enum.GetName(typeof(AccessModifiers), _access) + ":" +
+			Console.WriteLine(pre + "_access =      " + Enum.GetName(typeof(AccessModifiers), _access));
+
+---------- .\GENFIELDINFO.CS
+		protected AccessModifiers	_access		= AccessModifiers.Unassigned;
+		public static AccessModifiers GetAccess(FieldInfo field) {
+				return AccessModifiers.Private;
+				return AccessModifiers.Public;
+				return AccessModifiers.Protected;
+				return AccessModifiers.Internal;
+				return AccessModifiers.ProtectedInternal;
+				return AccessModifiers.Unknown;
+			result += Enum.GetName(typeof(AccessModifiers), _access);
+				"Scope=" + Enum.GetName(typeof(AccessModifiers), _access) + ":" +
+			Console.WriteLine(pre + "_access =      " + Enum.GetName(typeof(AccessModifiers), _access));
+
+---------- .\GENMEMBERINFO.CS
+	public enum AccessModifiers : byte {
+//				string temp = ((Enum)(AccessModifiers)i).ToString();
+				string temp = Enum.GetName(typeof(AccessModifiers), i);
+
+---------- .\GENMEMBERINFO.CS~
+	public enum AccessModifiers : byte {
+//				string temp = ((Enum)(AccessModifiers)i).ToString();
+				string temp = Enum.GetName(typeof(AccessModifiers), i);
+
+---------- .\GENMETHODBASE.CS
+		protected AccessModifiers _access = AccessModifiers.Unassigned;
+		protected static AccessModifiers GetAccess(MethodBase method) {
+				return AccessModifiers.na;
+				return AccessModifiers.Private;
+				return AccessModifiers.Public;
+				return AccessModifiers.Protected;
+				return AccessModifiers.Internal;
+				return AccessModifiers.ProtectedInternal;
+				return AccessModifiers.Unknown;
+		protected static string ToString(AccessModifiers access) {
+			return Enum.GetName(typeof(AccessModifiers), access);
+		protected static string ToHtml(AccessModifiers access) {
+			String result = Enum.GetName(typeof(AccessModifiers), access);
+
+---------- .\GENMETHODINFO.CS
+				"Scope=" + Enum.GetName(typeof(AccessModifiers), _access) + ":" +
+
+---------- .\GENPARAMETERINFO.CS
+
+---------- .\GENTYPEINFO.CS
+		protected AccessModifiers _access = AccessModifiers.Unassigned;	// access modifiers for this type
+		public static AccessModifiers GetAccess(Type type) {
+				return AccessModifiers.Private;
+				return AccessModifiers.Public;
+				return AccessModifiers.Protected;
+				return AccessModifiers.Internal;
+				return AccessModifiers.ProtectedInternal;
+				return AccessModifiers.Unknown;
+				"Scope=" + Enum.GetName(typeof(AccessModifiers), _access) + ":" +
+			Console.WriteLine(pre + "_access =     " + Enum.GetName(typeof(AccessModifiers), _access));
+		public static string ToString(AccessModifiers access) { return ((Enum)access).ToString(); }
+		public static string ToHtml(AccessModifiers access) {
+
+---------- .\NMAKE.BAT
+
+---------- .\SIGHELPER.CS
+
+---------- .\TTABLE.CS
+
+---------- .\.GENTYPEINFO.CS.SWP
+		protected AccessModifiers _access = AccessModifiers.Unassigned;	// access modifiers for this type
+
+---------- .\.CSPROPERTYINFO.CS.SWP
+			case AccessModifiers.Unassigned:
+			case AccessModifiers.Unknown:
+			case AccessModifiers.na:
+		protected static string ToHtml(AccessModifiers access) {
+				return SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+			case AccessModifiers.Unassigned:
+			case AccessModifiers.Unknown:
+			case AccessModifiers.na:
+		protected static string ToString(AccessModifiers access) {
+				return SigHelper.CsTranslate(Enum.GetName(typeof(AccessModifiers), access));
+
+---------- .\.GENPROPERTYINFO.CS.SWP
+				return AccessModifiers.na;
+		public static AccessModifiers GetAccess(MethodInfo method) {
+//				return AccessModifiers.na;
+		public static AccessModifiers GetSetAccess(PropertyInfo property) {
+//				return AccessModifiers.na;
+		public static AccessModifiers GetGetAccess(PropertyInfo property) {
+					Enum.GetName(typeof(AccessModifiers), _setaccess)););
+					Enum.GetName(typeof(AccessModifiers), _getaccess));
+		protected AccessModifiers	_setaccess		= AccessModifiers.Unassigned;
+		protected AccessModifiers	_getaccess		= AccessModifiers.Unassigned;
+			Console.WriteLine(pre + "_setaccess =      " + Enum.GetName(typeof(AccessModifiers), _setaccess));
+			Console.WriteLine(pre + "_getaccess =      " + Enum.GetName(typeof(AccessModifiers), _getaccess));
+				return AccessModifiers.na;
+		public static AccessModifiers GetAccess(MethodInfo method) {
+//				return AccessModifiers.na;
+		public static AccessModifiers GetSetAccess(PropertyInfo property) {
+//				return AccessModifiers.na;
+		public static AccessModifiers GetGetAccess(PropertyInfo property) {
+					Enum.GetName(typeof(AccessModifiers), _setaccess)););
+					Enum.GetName(typeof(AccessModifiers), _getaccess));
+		protected AccessModifiers	_setaccess		= AccessModifiers.Unassigned;
+		protected AccessModifiers	_getaccess		= AccessModifiers.Unassigned;
+				return AccessModifiers.Unknown;
+				return AccessModifiers.ProtectedInternal;
+				return AccessModifiers.Internal;
+				return AccessModifiers.Protected;
+				return AccessModifiers.Public;
+				return AccessModifiers.Private;
+				return AccessModifiers.na;
+				return AccessModifiers.Unknown;
+		public static AccessModifiers GetAccess(PropertyInfo property) {
+				return AccessModifiers.Unknown;
+				return AccessModifiers.ProtectedInternal;
+				return AccessModifiers.Internal;
+				return AccessModifiers.Protected;
+				return AccessModifiers.Public;
+				return AccessModifiers.Private;
+				"SetScope=" + Enum.GetName(typeof(AccessModifiers), _setaccess) + ":" +
+				"GetScope=" + Enum.GetName(typeof(AccessModifiers), _getaccess) + ":" +
+			result += ((_setter != null) ? Enum.GetName(typeof(AccessModifiers), _setaccess) + " set; " : "");
+			result += ((_getter != null) ? Enum.GetName(typeof(AccessModifiers), _getaccess) + " get; " : "");
+
+---------- .\GENPROPERTYINFO.CS~
+		protected AccessModifiers	_getaccess		= AccessModifiers.Unassigned;
+		protected AccessModifiers	_setaccess		= AccessModifiers.Unassigned;
+					Enum.GetName(typeof(AccessModifiers), _getaccess));
+					Enum.GetName(typeof(AccessModifiers), _setaccess)););
+		public static AccessModifiers GetGetAccess(PropertyInfo property) {
+//				return AccessModifiers.na;
+		public static AccessModifiers GetSetAccess(PropertyInfo property) {
+//				return AccessModifiers.na;
+		public static AccessModifiers GetAccess(MethodInfo method) {
+				return AccessModifiers.na;
+				return AccessModifiers.Private;
+				return AccessModifiers.Public;
+				return AccessModifiers.Protected;
+				return AccessModifiers.Internal;
+				return AccessModifiers.ProtectedInternal;
+				return AccessModifiers.Unknown;
+		public static AccessModifiers GetAccess(PropertyInfo property) {
+				return AccessModifiers.Unknown;
+				return AccessModifiers.na;
+				return AccessModifiers.Private;
+				return AccessModifiers.Public;
+				return AccessModifiers.Protected;
+				return AccessModifiers.Internal;
+				return AccessModifiers.ProtectedInternal;
+				return AccessModifiers.Unknown;
+				"GetScope=" + Enum.GetName(typeof(AccessModifiers), _getaccess) + ":" +
+				"SetScope=" + Enum.GetName(typeof(AccessModifiers), _setaccess) + ":" +
+			result += ((_getter != null) ? Enum.GetName(typeof(AccessModifiers), _getaccess) + " get; " : "");
+			result += ((_setter != null) ? Enum.GetName(typeof(AccessModifiers), _setaccess) + " set; " : "");
+			Console.WriteLine(pre + "_getaccess =      " + Enum.GetName(typeof(AccessModifiers), _getaccess));
+			Console.WriteLine(pre + "_setaccess =      " + Enum.GetName(typeof(AccessModifiers), _setaccess));
+
+---------- .\GENPROPERTYINFO.CS
+		protected AccessModifiers	_getaccess		= AccessModifiers.Unassigned;
+		protected AccessModifiers	_setaccess		= AccessModifiers.Unassigned;
+					Enum.GetName(typeof(AccessModifiers), _getaccess));
+					Enum.GetName(typeof(AccessModifiers), _setaccess)););
+		public static AccessModifiers GetGetAccess(PropertyInfo property) {
+//				return AccessModifiers.na;
+		public static AccessModifiers GetSetAccess(PropertyInfo property) {
+//				return AccessModifiers.na;
+		public static AccessModifiers GetAccess(MethodInfo method) {
+				return AccessModifiers.na;
+				return AccessModifiers.Private;
+				return AccessModifiers.Public;
+				return AccessModifiers.Protected;
+				return AccessModifiers.Internal;
+				return AccessModifiers.ProtectedInternal;
+				return AccessModifiers.Unknown;
+		public static AccessModifiers GetAccess(PropertyInfo property) {
+				return AccessModifiers.Unknown;
+				return AccessModifiers.na;
+				return AccessModifiers.Private;
+				return AccessModifiers.Public;
+				return AccessModifiers.Protected;
+				return AccessModifiers.Internal;
+				return AccessModifiers.ProtectedInternal;
+				return AccessModifiers.Unknown;
+				"GetScope=" + Enum.GetName(typeof(AccessModifiers), _getaccess) + ":" +
+				"SetScope=" + Enum.GetName(typeof(AccessModifiers), _setaccess) + ":" +
+			result += ((_getter != null) ? Enum.GetName(typeof(AccessModifiers), _getaccess) + " get; " : "");
+			result += ((_setter != null) ? Enum.GetName(typeof(AccessModifiers), _setaccess) + " set; " : "");
+			Console.WriteLine(pre + "_getaccess =      " + Enum.GetName(typeof(AccessModifiers), _getaccess));
+			Console.WriteLine(pre + "_setaccess =      " + Enum.GetName(typeof(AccessModifiers), _setaccess));
+
+---------- .\SIGHELPER.PDB
+
+---------- .\SIGHELPER.DLL
+AccessModifiers
+
+---------- .\OUT.TXT

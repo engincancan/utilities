@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Search Registry</Title>
+			<Shortcut />
+			<Description>search for phrase in registry</Description>
+			<Author />
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>Phrase to search for</ToolTip>
+					<Default>Testing</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="8"><![CDATA[$searchText = "$param1$"
+
+	dir HKCU:\ -rec -ea SilentlyContinue |  
+   	ForEach-Object {  
+      if((get-itemproperty -Path $_.PsPath) -match $searchText) 
+      {  
+         $_.PsPath 
+      }  
+   }]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

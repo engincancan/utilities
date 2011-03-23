@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Prompt with history count and console title</Title>
+			<Shortcut />
+			<Description>Replaces the prompt with the current command history id and displays the current path in the console title bar</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Code Language="PowerShell" Kind="5"><![CDATA[function prompt {
+	Write-Prompt ((Get-History -Count 1).Id + 1)
+    $Host.UI.RawUI.WindowTitle = get-location
+
+    return ' '
+}]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

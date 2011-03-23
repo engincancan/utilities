@@ -1,0 +1,3 @@
+[submodule "Scripts"]
+	path = Scripts
+	url = git@github.com:JamesKovacs/scripts.git

@@ -1,0 +1,153 @@
+[Sun Jul 18 11:15:59 2010]
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+[Sun Jul 18 11:31:49 2010]
+Self-test 8K passed!
+Self-test 8K passed!
+Self-test 8K passed!
+Self-test 8K passed!
+Self-test 8K passed!
+Self-test 8K passed!
+Self-test 8K passed!
+Self-test 8K passed!
+[Sun Jul 18 11:47:11 2010]
+Self-test 10K passed!
+Self-test 10K passed!
+Self-test 10K passed!
+Self-test 10K passed!
+Self-test 10K passed!
+Self-test 10K passed!
+Self-test 10K passed!
+Self-test 10K passed!
+[Sun Jul 18 12:03:18 2010]
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+[Sun Jul 18 12:19:00 2010]
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+[Sun Jul 18 12:36:03 2010]
+Self-test 12K passed!
+Self-test 12K passed!
+Self-test 12K passed!
+Self-test 12K passed!
+Self-test 12K passed!
+Self-test 12K passed!
+Self-test 12K passed!
+Self-test 12K passed!
+[Sun Jul 18 12:51:23 2010]
+Self-test 14K passed!
+Self-test 14K passed!
+Self-test 14K passed!
+Self-test 14K passed!
+Self-test 14K passed!
+Self-test 14K passed!
+Self-test 14K passed!
+Self-test 14K passed!
+[Sun Jul 18 13:07:34 2010]
+Self-test 640K passed!
+Self-test 640K passed!
+Self-test 640K passed!
+Self-test 640K passed!
+Self-test 640K passed!
+Self-test 640K passed!
+Self-test 640K passed!
+Self-test 640K passed!
+[Sun Jul 18 13:24:09 2010]
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+[Sun Jul 18 13:40:51 2010]
+Self-test 16K passed!
+Self-test 16K passed!
+Self-test 16K passed!
+Self-test 16K passed!
+Self-test 16K passed!
+Self-test 16K passed!
+Self-test 16K passed!
+Self-test 16K passed!
+[Sun Jul 18 13:56:00 2010]
+Self-test 20K passed!
+Self-test 20K passed!
+Self-test 20K passed!
+Self-test 20K passed!
+Self-test 20K passed!
+Self-test 20K passed!
+Self-test 20K passed!
+Self-test 20K passed!
+[Sun Jul 18 14:11:02 2010]
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+[Sun Jul 18 14:27:00 2010]
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+[Sun Jul 18 14:43:08 2010]
+Self-test 24K passed!
+Self-test 24K passed!
+Self-test 24K passed!
+Self-test 24K passed!
+Self-test 24K passed!
+Self-test 24K passed!
+Self-test 24K passed!
+Self-test 24K passed!
+[Sun Jul 18 14:58:22 2010]
+Self-test 28K passed!
+Self-test 28K passed!
+Self-test 28K passed!
+Self-test 28K passed!
+Self-test 28K passed!
+Self-test 28K passed!
+Self-test 28K passed!
+Self-test 28K passed!
+[Sun Jul 18 15:13:23 2010]
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+[Sun Jul 18 15:30:23 2010]
+Self-test 256K passed!
+Self-test 256K passed!
+Self-test 256K passed!
+Self-test 256K passed!
+Self-test 256K passed!
+Self-test 256K passed!
+Self-test 256K passed!
+Self-test 256K passed!

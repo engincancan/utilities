@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Write-Debug</Title>
+			<Shortcut>wd</Shortcut>
+			<Description>inserts a write-debug statement</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>your debug message goes here</ToolTip>
+					<Default>Debug Message</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="1"><![CDATA[Write-Debug "$param1$"
+]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

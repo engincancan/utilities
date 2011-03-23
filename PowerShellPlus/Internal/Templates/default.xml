@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<SomeData>
+  <Config>
+    <Category>Version</Category>
+    <Name>Version</Name>
+    <Value>PowerShell Plus</Value>
+    <Type>String</Type>
+  </Config>
+</SomeData>

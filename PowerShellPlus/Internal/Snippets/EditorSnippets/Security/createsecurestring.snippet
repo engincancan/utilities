@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Convert to SecureString</Title>
+			<Shortcut />
+			<Description>converts plain text to a secure string</Description>
+			<Author />
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>plain text secret</ToolTip>
+					<Default>secret</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="-1"><![CDATA[convertTo-SecureString "$param1$" -AsPlainText -Force]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

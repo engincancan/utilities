@@ -1,0 +1,250 @@
+H2benchw -- by Harald Bögeholz & Lars Bremer / c't Magazin für Computertechnik
+Copyright (C) 2009 Heise Zeitschriften Verlag GmbH & Co. KG
+============================================================================== 
+
+H2benchw is een programma voor de Win32-console (vanaf de
+'dos'-prompt) onder Windows NT, 2000, XP en Vista. Het programma
+benadert de harde schijf direct door deze te openen als fysieke
+schijf. Om dit te doen moet het programma beheerdersrechten hebben. Om
+vergelijkbare resultaten te krijgen raden we aan geen andere
+applicaties te draaien tijdens de benchmark en de pc met rust te
+laten. (H2benchw zorgt zelf voor de maximale prioriteit voor haar
+proces.)
+
+Op de commandoregel moet het nummer van de te testen harde schijf en
+alle opties voor de test ingevoerd worden. Als het programma zonder
+parameters opgestart wordt, toont deze een korte helptekst. Alle
+opties moeten in lowercase worden ingevoerd. Het nummer van de te
+testen harde schijf is de belangrijkste parameter. De eerste fysieke
+schijf heeft nummer 0, de volgende is nummer 1 enz. Als je het
+schijfnummer zonder verdere opties invoert, geeft H2benchw de
+geometrie (cilinders, koppen, sectoren) en de capaciteit van de schijf
+weer. Voor IDE-schijven krijgt men ook nog het modelnummer,
+serienummer en de firmware-versie. Als de computer meerdere schijven
+bevat wordt aangeraden H2benchw eerst in deze modus te draaien, zodat
+men later gemakkelijk de correcte schijf kan kiezen.
+
+H2benchw negeert de partitionering en benadert de schijf direct, zodat
+alle gegevens verloren gaan wanneer er naar de schijf wordt
+geschreven. Daarom werkt H2benchw normaal alleen in read-only modus.
+De optie "-!" activeert schrijfmetingen. Uit veiligheidsredenen werkt
+dit niet als het programma partities op de schijf vindt.
+
+H2benchw bestaat uit vijf onderdelen: een meting van de interface-
+transferrate, een meting van de gemiddelde toegangstijd (seek), een
+zonemeting, een test van de gegevensintegriteit en een meting op de 
+basis van applicatieprofielen. Voor nader uitleg, zie c't 9/02 p. 46.
+
+De optie "-c <n>" (-c betekent "core test" en heet zo voor historische
+redenen) activeert de meting van de interface transferrate op een plek
+die overeenkomt met <n> procent van de capaciteit. Deze test wordt
+meestal bij 0 procent gedaan omdat de meeste harde schijven hier het
+snelst zijn.
+
+De optie "-d <n>" test de gegevensintegriteit waarbij de eerste <n>
+sectors van de schijf compleet worden getest, de rest steeksproefgewijs.
+In plaats van een getal mag hier ook het woord "max" staan, dan test
+het programma de complete harde schijf. Meer hierover verder onder in de
+alines "Test van gegevensintegriteit".
+
+De optie "-z" start de zone-meting.
+
+De optie "-s" start de zoekmeting (s - Seek)
+
+De optie "-p" meet applicatieprofielen. LET OP: Deze meting is
+inmiddels niet meer zo betrouwbaar omdat de toegangsprofielen van het
+besturingssysteem en de applicaties veranderd zijn. Verder gaat
+h2benchw van een aantal vooronderstellingen uit die niet langer van
+toepassing zijn op de huidige generatie harde schijven. Hierdoor geven
+sommige profielen een onwaarschijnlijk goed resultaat. 
+
+Als je de optie "-a" invoert worden alle deelmetingen gedaan;
+deze optie combineert dus "-c", "-z", "-s", "-p" en "-d 20480" indien 
+"-!" opgegeven is. 
+
+Je kunt de optie "-w <bestandsnaam>" gebruiken om de resultaten naar
+een bestand te laten schrijven. H2benchw voegt de extensies ".txt" en
+".ps" aan de opgegeven basisnaam toe en maakt twee
+resultaat-bestanden.
+
+Het bestand met de extensie ".txt" is een ASCII-bestand, het eerste
+deel ervan is een samenstelling van de resultaten. Het tweede deel
+bevat uitgebreide resultaten van de metingen. Denk eraan dat de
+zonemeting tot 1000 punten voor lees- en schrijftests heeft. Elk
+resultaat wordt op een afzonderlijke regel weergegeven zodat de
+resultaten door een ander programma verder kunnen worden verwerkt.
+Voordat je het .txt-bestand uitprint, moet je met een teksteditor het
+tweede deel van het bestand afknippen - anders print je meer dan 30
+pagina's "troep" uit.
+
+Het bestand met de extensie ".ps" is in het PostScript-formaat en vat
+alle resultaten op een pagina samen. Als je een PostScript printer
+hebt kun je dit bestand naar de printer sturen, bijvoorbeeld met het
+commando
+
+copy /b bestandsnaam.ps prn
+
+Als je geen PostScript printer hebt of je de resultaten op het scherm
+wilt bekijken kun je de freeware vertaler GhostScript of GhostView
+gebruiken. Deze programma's zijn voor nagenoeg alle besturingssystemen
+op internet beschikbaar. Actuele versies vind je op
+http://www.cs.wisc.edu/~ghost/.
+
+De volgende opties kunnen voor documentatiedoeleinden worden gebruikt:
+"-tt" plus de naam van de harde schijf (in aanhalingstekens) zet de
+'titel' van de test, "-ts" is bedoeld voor extra informatie zoals het
+mediatype bij verwisselbare media. Op dezelfde wijze gebruikt men:
+"-tb" voor het BIOS, "-tc" voor de cpu, "-tm" boor het moederbord en
+"-ta" voor de adapter (SCSI of EIDE). Aangezien deze laatste
+componenten nauwelijks veranderen kun je deze ook in
+omgevingsvariabelen zetten (dwz., plaats SET commando's in een batch-
+bestand of zet de variabelen via het controlepaneel in XP onder System
+-> Advanced -> Environment Variables). De relevante variabelen hebben
+de namen H2BTITLE, H2BMEDIUM, H2BBIOS, H2BCPU, BOARD en H2BADAPTER.
+Hier wordt alleen naar gekeken als de commandoregel geen relevante
+gegevens bevat.
+
+In de meeste gevallen moet je alleen maar de naam van de harde schijf
+voor de test invoeren. Hier is een karakteristiek commando:
+
+h2benchw 1 -a -! -tt "harddisk 42" -w 42
+
+Dit test de tweede harde schijf in de computer en slaat de resultaten
+in de bestanden "42.txt" en "42.ps" op.
+
+
+Test van de gegevensintegriteit
+===============================
+
+Hsbenchw was oorspronkelijk een pure benchmark die alleen checkte hoe
+snel gegevens worden gelezen en geschreven maar niet of dit ook foutloos
+gebeurt. Met de aanpassing voor een overschrijding van de 128-GB-grens 
+voor IDE-schijven is er een test van de gegevensintegriteit erbij gekomen 
+(optie -d <n>). Deze werkt als volgt:
+
+Eerst schrijft de test in de eerste <n> sectors van de schijf bepaalde
+testpatronen (geen twee ervan gelijk). De default voor <n> is 20480
+sectors (= 10 MB). In plaats van <n> mag er ook "max" voor de complete
+capaciteit worden opgegeven. Hierna schrijft H2benchw telkens vijf
+sectors in de omgevind van alle LBA's die een macht van twee voorstellen 
+(dit zijn bij driverbugs vaak de critische adressen). Tenslotte schrijft
+de test nog een bepaalde tijd lang (default: 10 secondes) naar een pseudo-
+toevallige reeks van sectors. Hoe lang deze laatste fase duurt, kun je met
+de optie -dt <s> veranderen, waarbij het getal <s> de tijd in secondes
+opgeeft.
+
+Na een korte rustpauze leest H2bench alle eerst geschreven testgegevens 
+terug en chekct deze. Als hierbij een fout optreedt, breekt hij af en
+meldt de plaats van de fout, verwachte waarde en gevonden waarde. De 
+testgegevens zijn zo opgezet dat in het eerste Dword (offset 0) van 
+elke sector diens LBA te vinden is. Als hier bij de check een fout wordt 
+ontdekt, betekent dit waarschijnlijk dat een sector naar een foute adres 
+werd geschreven, en je kunt aan de hand van deze waarde zien, welk sector
+dit was.
+
+LET OP: als je de integriteitstest zonder de optie -! oftewel alleen lezend
+doorvoert, moeten natuurlijk eerst de overeenkomstige hoeveelheid
+testgegevens geschreven zijn, anders krijg je een foutmelding.
+
+
+Taalkeuze
+=========
+
+H2benchw "spreekt" momenteel drie talen: Duits, Engels en Nederlands,
+de standaardtaal is Duits. De commandoregeloptie "-nederlands" kiest
+Nederlands, "-english" kiest Engels en "-deutsch" kiest Duits.
+
+De taal kan ook gekozen worden met de omgevingsvariabele H2BLANGUAGE.
+Dan hoef je de taal niet meer op de commandoregel in te voeren. Je
+moet H2BLANGUAGE in het controlepaneel zetten, bijvoorbeeld:
+
+SET H2BLANGUAGE=deutsch     voor Duits
+
+SET H2BLANGUAGE=english     voor Engels
+
+SET H2BLANGUAGE=nederlands  voor Nederlands
+
+
+Bekende Beperkingen
+===================
+
+H2benchw werkt intern met 32-bits-waardes voor de logische blokadressen
+(LBA). He kan daarom met schijven van meer dan 2 Terabyte niet meer werken
+(hopelijk ben ik niet ergens een voortekenbit vergeten zodat ik er al een
+1-TB-bug hebt ingebouwd ;-) ).
+
+Op sommige meerprocessor- of dual-core-systemen heeft H2benchw
+problemen met de tijdmeting. Bij twijfel aan de correctheid van de
+resultaten verdient het aanbeveling de meting op een systeem met één
+processor te herhalen.
+
+Vragen
+======
+
+Stuur alle vragen in Duits of Engels aan bo@ct.heise.de (Harald
+Boegeholz) of in Nederlands aan lezervragenct@fnl.nl. Vragen die te
+vinden zijn in de FAQ hieronder worden niet beantwoord.
+
+
+
+FAQ
+===
+
+?  H2benchw crasht altijd met een leesfout.
+
+:  Wanneer de schijf fysieke fouten bevat kan de huidige versie van
+   H2benchw de continue transferrate (zone meting) niet meten. Met een
+   beetje geluk werken enkele andere metingen nog wel als ze geen
+   defecte sectoren tegenkomen.
+
+
+?  Als ik H2benchw start krijg ik altijd een foutmelding dat de timer
+   niet monotoon loopt en het programma crasht.
+
+:  Op sommige chipsets is de timer defect: de lagere bits worden soms
+   fout gelezen, en het lijkt alsof de tijd achteruit gaat.
+
+   Tot nu toe werd deze foutmelding alleen onder Windows 2000 gezien.
+   Windows NT en XP schijnen deze fout te compenseren. Als je deze
+   foutmelding onder Windows XP tegenkomt, zou ik een exacte
+   beschrijving van je systeem en de omstandigheden waaronder deze
+   foutmelding te zien was waarderen. Email (Engels of Duits) aan
+   bo@ct.heise.de of (Nederlands) aan lezervragenct@fnl.nl
+
+   In de tussentijd kun je de optie "-Tnocheck" gebruiken om de timer
+   test te voorkomen - niet het eigenlijke probleem. Als je deze optie
+   gebruikt, zijn de resultaten nog steeds redelijk correct, maar niet
+   nauwkeurig.
+
+
+?  Ik kan jullie resultaten niet reproduceren: ik krijg voor mijn
+   SCSI-schijf veel lagere waarden dan jullie.
+
+:  Op SCSI-schijven activeren we altijd de write cache voor de
+   benchmark. Zonder cache schrijven SCSI-schijven slechts half zo
+   snel als ze lezen.
+
+
+?  Ik heb H2benchw 2.15 en 2.3. Welke hiervan is nieuwer?
+
+:  Het getal achter de punt is geen decimale breukfractie maar een
+   oplopend versienummer. Na 2.9 (twee-negen) kwam 2.10 (twee-tien),
+   daarna 2.11 (twee-elf) enz. De actuele versie is 3.13.
+
+?  Mijn IDE-schijf bereikt een maximale transferrate van ca. 7 MB/s
+   [Soms nog niet eens 2 MB/s] als ze met de onboard IDE-kanaal van
+   mijn moederbord verbonden is, maar de resultaten in de c't voor dit
+   model waren veel beter. Als ik de schijf in een ander systeem stop
+   zijn de resultaten ook beter.
+
+:  De schijf werkt waarschijnlijk in PIO-modus in plaats van (Ultra)
+   DMA. Kijk dit na in het apparaatbeheer (windows 2000/XP) of met het
+   programma dmacheck dat je bij Microsoft kunt downloaden.
+
+
+?  Ik gebruik een IDE RAID groep. Hoezo geeft H2benchw de model- en
+   serienummers van de schijven niet aan?
+
+:  De ATA gegevens worden momenteel alleen bij losse IDE-schijven
+   gelezen. Er zijn bovendien ook nog enkele hostadapters waar dit 
+   nog niet eens voor losse schijven werkt, sorry.

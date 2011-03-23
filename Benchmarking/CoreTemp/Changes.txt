@@ -1,0 +1,255 @@
+Version 0.99.0.16 - 18th May, 2008
+
+- Fix: Incorrect recognition of 45nm Mobile Intel CPUs.
+- Fix: CPU temperature not displayed in Core Temp window on Phenom CPUs (0.98 and 0.98.1).
+- Fix: CPU load would sometimes display -1% load.
+- Fix: AMD K8 would sometimes spike to 206C, the false reading is now ignored.
+- Fix: AMD K8 sometimes constantly reads -49C.
+- Fix: Core Temp does not show up automatically on G15 LCD with 2.02 driver.
+- Fix: Shared memory structure was not properly filled on multiprocessor systems.
+- Fix: System tray setting "Show highest temperature of each CPU" only displays one temperature reading in a multi CPU system.
+- Fix: Certain problems with font resizing should now be fixed.
+- Fix: G15 LCD would not update after using soft buttons.
+- Fix: On temperature display mode change, high and low records were not reset.
+- Fix: Changing the reading interval in settings did not actually update, restart of Core Temp was needed to apply the change.
+- Fix: Incorrect VID detection on 45nm desktop Intel parts.
+
+- Add: Shared memory - developers now have access to Core Temp data.
+- Add: Register dump to text file function.
+- Add: Preliminary Atom (Silverthorne) support - Untested.
+- Add: Support for Intel Core 2 Duo E7000 45nm series.
+- Add: Option to show a single icon instead of temperature in the system tray.
+- Add: Custom font and size for G15 LCD screen or simply use the built in compact font and layout. (via Settings.ini)
+
+- Change: Improved detection of L2 cache on Intel chips for more accurate recognition.
+- Change: Rewritten temperature calculation to fix problems with shared memory. Needs more testing to confirm as 100% working.
+- Change: Default G15 LCD text layout and font changed.
+- Change: Doesn't create a log file containing session start and end times if logging is disabled.
+- Change: Settings.ini file is automatically created with default settings in case one doesn't already exist.
+
+
+
+Version 0.98.1 - 23rd April, 2008
+
+- Fix: Incorrect recognition of 45nm Intel CPUs in version 0.98.
+
+
+
+Version 0.98 - 23rd April, 2008
+
+- Fix: Core Temp sometimes crashes when another program tries to access the log file. - Still needs further testing.
+
+- Add: Show load percentage per core.
+- Add: Adjustable Tj.Max value via *.INI file.
+- Add: Option to start Core Temp with Windows.
+- Add: Support new Intel Mobile processors
+
+- Change: Maximum logging interval is now 99999ms instead of 9999ms.
+- Change: Log file layout. Shows current temperature, high\low temperature, core load, CPU speed.
+
+
+
+Version 0.97.1 - 7th March, 2008
+
+- Fix: Phenom did not display proper temperature.
+- Fix: Phenom randomly reports 255C (value ignored).
+- Fix: Phenom displays more than a single system tray icon per CPU.
+- Fix: Phenom 1/4 multipliers rounded improperly.
+
+- Change: C° and F° now will display °C and °F accordingly.
+
+
+
+Version 0.97 - 5th March, 2008
+
+- Add: Vista x64 support - All drivers are now digitally signed!
+- Add: Logitech G15 keyboard support - see ReadMe!.txt for details.
+- Add: Support 45nm LGA775 Xeon series.
+
+- Fix: Opaque background in system tray wasn't 16x16 pixels.
+- Fix: Yonah based CPUs incorrectly detected.
+- Fix: 1333FSB Dual Core Conroe based Xeon incorrectly detected.
+- Fix: Dreaded cycle of "Driver can't load" messages if driver failed to load.
+- Fix: Socket AM2 Athlon-FX was not recognized.
+
+- Change: Core Temp layout on a Phenom.
+
+
+
+Version 0.96.1 - 15th January, 2008
+
+- Add: Support for Phenom and "Barcelona" Opteron.
+- Add: Support all K8 processors.
+- Add: Support Intel Celeron M 500 series.
+
+- Fix: Wrong CPU speed on Intel ES chips.
+- Fix: Fix M0 Tjunction max detection.
+- Fix: Intel QX6850 CPU's rating shown as QX6650.
+- Fix: Intel E6550 CPU's rating shown as E6650.
+- Fix: Intel Celeron M 400 series detected incorrectly.
+- Fix: AMD Opteron for Socket AM2 reported as Santa Rosa instead of Santa Ana.
+
+
+
+
+Version 0.96 - 31st December, 2007
+
+- Add: System tray icons configuration.
+- Add: Support for Intel's latest CPUs.
+- Add: ClearType font support.
+- Add: Time\Date column to the log file.
+- Add: Always on top option.
+
+- Fix: Core Temp does not proprerly display temperature and CPU select fields.
+- Fix: Log file layout.
+- Fix: Hide\Show does not properly Minimize\Restore window.
+- Fix: Core code names aren't properly detected. (Intel)
+- Fix: Incorrect\Missing CPU rating when not using stock\maximum multiplier. (Intel)
+- Fix: Wrong CPU clock is reported when using EIST\non-maximum multiplier. (Intel)
+- Fix: Wrong detection of Merom based CPUs.
+- Fix: Single core Athlon 64s and Semprons reading -49C constantly. (Rare)
+- Fix: C2D M0 rev. report very low temperatures. (Tjmax to 100C)
+- Fix: Layout and display of tool tip text in the system tray. (Now shows a core per line)
+
+- Change: Log the start and end of a session even if logging is disabled.
+- Change: Settings and Systray settings windows appear in center of main window.
+- Change: Rename "Tjunction" field to "Tj. Max" to make things clearer.
+
+
+
+
+Version 0.95.4 - 22nd August, 2007
+
+- Fix: Core Temp causes restarts/BSODs on start.
+- Fix: Core Temp causes hard shutdowns on some AMD systems.
+- Fix: System tray icons are black squares on less than 32bit desktops.
+- Fix: Some other minor bugs fixed.
+
+- Add: Support new Intel CPUs.
+
+
+
+Version 0.95 - 17th March, 2007
+
+- Fix: Revision F Turion/Turion X2 detected wrong.
+- Fix: Core Temp fully loads one core on a dual core AMD CPU.
+- Fix: Core Temp crashes on Dual Core Opteron 200 series systems.
+- Fix: Core Temp misdetected certain Dual Core Opteron CPUs.
+- Fix: Must set Core Temp to run as Administrator in Vista.
+- Fix: Can't see Core Temp GUI if Core Temp was last closed minimized.
+- Fix: C2D L2 rev. report very low temperatures. (Tjmax to 100C)
+- Fix: Core Temp reported wrong temps after a while. (Driver conflict)
+- Fix: Core Temp reported Max VID on Intel CPUs. (Now shows current)
+
+- Add: Show temperature in System tray.
+- Add: Manual refresh option by pressing F5 or "File" Menu.
+- Add: Show "Delta to Tjunction" temperature for Core 2 CPUs.
+- Add: Support for latest Intel and AMD CPUs.
+- Add: Minimize/Restore option in system tray icon right click.
+- Add: Save last window position.
+- Add: Prevent 2 instances of Core Temp from launching.
+
+- Change: Rewritten Intel CPU recognition code.
+- Change: Core 2 Duo codename change to Conroe-2M from Allendale.
+- Change: Pop up bubble-window with temperatures removed.
+- Change: Not Beta status anymore.
+
+
+
+
+Version 0.94 - 16th November, 2006
+
+- Change: Only list physical processors in CPU selection.
+- Change: Improve Intel CPU detection.
+
+- Fix: Temperature log file not created in EXE folder.
+- Fix: Temperature log file left "Processor" field blank.
+
+- Add: An actual icon for the EXE/System tray.
+- Add: An option to display temperature in Fahrenheit.
+- Add: An option to start Core Temp minimized.
+
+- Remove: GCPUID button.
+
+
+
+
+Version 0.93 - 19th October, 2006
+
+- Change: Remove 49C/35W TCM/TDP (AMD only).
+- Change: Reverse core numbers (AMD only).
+- Change: Start numbering from CPU/Core #0.
+- Change: "TCaseMax" label to "Tjunction" for Core 2 series.
+
+- Fix: Temperature overflow, would show "4294967296C° (?)".
+- Fix: A new "CPU is overheating" message appearing with each temp read.
+- Fix: Wrong VID (not VCore) reported in the 1.0xxV range on Core 2 series.
+
+- Add: Detection of CPU "C* State" (C0/C1/C2/C3, Intel only).
+- Add: Toggle logging On/Off.
+- Add: Select interval for reading temps.
+- Add: Select interval for logging.
+- Add: Disable CPU overheat warning.
+
+
+
+
+Version 0.9.0.91 - 10th July, 2006
+
+-Logging feature added - Just copy into Excel for easy graphing.
+- Fixed a bug where some programs would cause the program's driver to fail.
+
+
+
+Version 0.9.0.86 - 5th July, 2006
+
+- Removed Sensor Offset support - Since it gave very inaccurate readings.
+- Fixed a bug where a non-CnQ chip would report x4 Multiplier.
+
+
+
+Version 0.9.0.85 - 5th July, 2006
+
+- Added Sensor Offset support for more accurate results.
+- Fixed a bug with the program failing to show temps lower than 0C.
+
+
+
+Version 0.9.0.83 - 5th July, 2006
+
+- Fixed a bug with Ballon tip always showing 0C.
+- More text formatting.
+
+
+
+Version 0.9.0.80 - 4th July, 2006
+
+- Integrated "AMD64 TCaseMax" - For RevE chips only.
+- Added support for the whole K8 series of CPUs.
+- Fixed some small GUI bugs.
+
+
+
+Version 0.9.0.54 - 18th June, 2006
+
+- Added Revision F AMD CPU support.
+- Added Tjunction detection on Yonah/Conroe/Merom for accurate temperature readings.
+- Fixed some bugs.
+
+
+
+Version 0.9.0.36 - 12th May, 2006
+
+- Added proper Merom*/Conroe** support.
+- Fixed some GUI problems.
+- Added code to prevent potential endless loop.
+- If "Read Valid" flag is not set, will show (?) after the temperature value.
+
+* On a Merom it will report the temperature delta to Tjunction (Max temp defined by Intel).
+** Conroe might not support this feature.
+
+
+
+Version 0.9.0.32 - 24th April, 2006 
+
+- First public beta release.

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Add value to registry key</Title>
+			<Shortcut />
+			<Description>Adds a value and content to a registry key</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>key you want to add a value to. This key MUST exist.</ToolTip>
+					<Default>HKCU:\Software\Test</Default>
+				</Literal>
+				<Literal>
+					<ID>param2</ID>
+					<ToolTip>Name of new value</ToolTip>
+					<Default>Test</Default>
+				</Literal>
+				<Literal>
+					<ID>param3</ID>
+					<ToolTip>Value to store in new value</ToolTip>
+					<Default>Testvalue</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="0"><![CDATA[if (Test-Path '$param1$') {
+	New-ItemProperty '$param1$' -Name '$param2$' -Value '$param3$'
+	"Added Key-Value pair to registry key"
+} else {
+	"Registry key $param1$ does not exist."
+}]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

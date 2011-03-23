@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Create new alias</Title>
+			<Shortcut />
+			<Description>Creates a new alias to easily launch Internet Explorer</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>Alias Name - this is the name you use later to access the alias</ToolTip>
+					<Default>ie</Default>
+				</Literal>
+				<Literal>
+					<ID>param2</ID>
+					<ToolTip>Program to launch when alias name is entered</ToolTip>
+					<Default>"$env:programfiles\Internet Explorer\iexplore.exe"</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="2"><![CDATA[Set-Alias $param1$ $param2$
+ie							# launch Internet Explorer with your new alias
+ie www.powershell.com		# launch IE with a specific web page]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

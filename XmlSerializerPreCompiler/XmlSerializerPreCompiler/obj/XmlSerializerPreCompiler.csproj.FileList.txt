@@ -1,0 +1,4 @@
+bin\Release\XmlSerializerPreCompiler.exe.config
+bin\Release\XmlSerializerPreCompiler.exe
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\XmlSerializerPreCompiler.exe

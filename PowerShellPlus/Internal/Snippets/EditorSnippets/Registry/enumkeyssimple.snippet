@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Enumerate Subkeys</Title>
+			<Shortcut />
+			<Description>enumerates all subkeys of a given registry key. In addition, PowerShell adds some own properties which all start with "PS"</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>Registry key to enumerate</ToolTip>
+					<Default>HKCU:\Software\Microsoft\Windows\CurrentVersion\Run</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="0"><![CDATA[Get-ItemProperty '$param1$']]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

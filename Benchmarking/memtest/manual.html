@@ -1,0 +1,183 @@
+<head>
+<title>MemTest Manual</title></head><body>
+<table border="0" width="100%" bgcolor="#000000">
+  <tr><td width="50%"><p><b><font color="#FFFF00" size="5">MemTest 3.6&nbsp;</font></b></p></td><td width="50%"><p align="right"><b><font color="#FFFF00" size="5">(c)
+      2007</font></b></p></td></tr>
+</table>
+<h4 align="center">A product of HCI Design (<a href="http://hcidesign.com">http://hcidesign.com/</a>)</h4>
+<h4 align="center"><a href="#Introduction">Introduction</a> |&nbsp; <a href="#How to use it">How
+to use it&nbsp;</a> | <a href="#error">If you find an error</a> | <a href="#The Pro Version">Pro
+&amp; Deluxe Version</a> | <a href="#Support">Support</a></h4>
+<table border="0" width="100%" bgcolor="#000000">
+  <tr>
+    <td width="100%" nowrap>
+      <p><font color="#FFFF00" size="4"><a name="Introduction"><b>Introduction</b></a></font></p></td></tr>
+</table>
+<p>MemTest is a RAM reliability tester. A correctly functioning computer should
+be able to store data in RAM with 100% accuracy day in and day out. A computer that
+fails these tests,
+perhaps because of old hardware, damaged hardware, or poorly configured
+hardware, will be less stable and crash more often. Even worse, it will become even less
+stable over time as corrupted data is written to your hard disk.&nbsp;</p>
+<p>By running MemTest you can ensure that your computer's RAM is functioning correctly. This is a good thing to check whenever you buy a new computer, install new
+RAM, or change the configuration of your machine (for instance, to overclock
+it).&nbsp; If you are the sort of user who likes to push the performance of your
+machine to the edge, relying upon whether your machine will boot after your new
+BIOS tweaks is a poor way to determine the safety of your new settings. Use MemTest as a true test of stability.</p>
+<table border="0" width="100%" bgcolor="#000000">
+  <tr>
+    <td width="100%">
+      <p><font color="#FFFF00" size="4"><a name="How to use it"><b>How to use it</b></a></font></p>
+    </td>
+  </tr>
+</table>
+<p>Please read this section before contacting technical support.&nbsp; There are
+some brief guidelines at the end for typical testing procedures, and comments on
+typical results.</p>
+<p>Unlike other memory checking software, MemTest is designed to find all types
+of memory errors including intermittent problems. Therefore, it needs to be run
+for several hours to fully evaluate your RAM. The best way to use the
+system is to set it up to run overnight, for a fully rigorous test.&nbsp;
+Letting MemTest run long enough to achieve 100% coverage will only identify RAM that
+frequently corrupts all data written to it.&nbsp;You can also run
+MemTest while you use your computer for other tasks, which will help identify
+memory errors which only show up while the computer is under load.&nbsp;</p>
+<p>To keep the test running smoothly and quickly, you should only test the
+amount of RAM that is free, rather than the total amount of RAM in your system -
+otherwise your computer will spend 90% of the test reading and writing to your
+hard drive, rather than testing RAM. You can use the Windows2000/XP/Vista Task
+Manager, or the Windows 9X System Monitor to determine the proper amount of ram
+to check.&nbsp; As a rule of thumb, Win9X uses about 32MB of RAM when nothing is
+open, and Windows2000/XP uses about 64MB.&nbsp; Even though you cannot directly
+check this RAM, Windows dynamically moves the location of most of its subsystems,
+so most of your RAM will be checked eventually.&nbsp;</p>
+<p>No Windows program can directly check the RAM used by the OS; this is a fundamental
+limitation of using a modern OS. If you need to check every byte, consider
+purchasing MemTest Deluxe, which boots off its own floppy (or CD) for unfettered access
+to RAM.&nbsp;</p>
+<p>100% coverage represents one complete pass of testing your memory. In general,
+running multiple passes is better. Here are three typical lengths
+of testing you might try:</p>
+<ol>
+  <li>Test until 100% coverage (a quick test to make sure your RAM is
+    functioning reasonably)</li>
+  <li>Test for 1 hour (this will catch virtually all errors in your memory)</li>
+  <li>Test overnight (your computer's not doing anything else at night anyway,
+    why not be absolutely sure your RAM is good?)</li>
+</ol>
+<p> MemTest will report any errors that it finds as soon as it finds
+them, so if you do not see any error messages then all testing so far has been
+successful. Once you start testing, MemTest will continue to test
+your RAM until you tell it to stop, or quit. The tests can run as long as you
+wish, and become more rigorous the longer you let them go.&nbsp;</p>
+<p><b>How it works:</b> MemTest tests the ability of your RAM to store many different unique bit patterns, and the ability
+to correctly hold those values over various periods of time. More traditional memory checking programs can only
+catch problems which show up immediately. MemTest catches both immediate errors
+and long term errors. &nbsp;The longer you run the program, the better the test against
+long term errors.&nbsp; If you can run MemTest overnight without errors this
+means that your machine can function for that period of time without making a
+single memory error, even when the RAM load is very heavy. Statistically, it also means that your machine is always able
+to function without memory error.&nbsp;</p>
+<p align="left"><b>NOTE</b>: If you run MemTest and
+it only checks a few % of RAM over the period of an hour, this means you told it
+to allocate more RAM than is available. When this happens,
+almost all of the testing time is taken reading from the hard disk swap, which
+is a reasonable hard disk check, but not very useful for checking RAM. Select
+less RAM to check and try again.&nbsp;&nbsp;</p>
+<table border="0" width="100%" bgcolor="#000000">
+  <tr>
+    <td width="100%">
+      <p><font color="#FFFF00" size="4"><a name="error"><b>If you find an
+      error</b></a></font></p>
+    </td>
+  </tr>
+</table>
+<p>In all cases, if MemTest finds an error it will stop and report it to you.
+If you do get an error, you should consider replacing you RAM or at the very
+least verifying that your machine is correctly configured. Note that even ONE
+error is a sign of a serious problem - a correctly functioning computer can run
+MemTest for weeks with no errors.&nbsp;</p>
+<p> Unfortunately, due to variations in
+motherboards and chipsets, it is impossible to reliably locate the physical chip that is
+failing purely via software. It is still possible, however, to determine which
+DIMM is failing if you have more than one, by elimination: Run the machine with one memory board installed
+at a time; when errors are found the installed board is at fault.&nbsp;This is
+also a good diagnostic for another reason: sometimes the problem is really with
+the motherboard, and it will disappear if you have less RAM installed, or if the
+DIMMs are installed in different slots.&nbsp;If you have access to multiple
+computers, you can also try testing the &quot;faulty&quot; RAM in both to
+isolate whether the problem is the memory or some other component.&nbsp;</p>
+<p>If you have more than one memory board and you find errors with both, even
+when you test them one at a time, this suggests that your RAM is probably OK.
+Either your motherboard is failing, you are using memory timing settings that
+are too aggressive, or your RAM is not compatible with your motherboard. You can
+experiment with memory timing settings in your BIOS, which may allow you to use
+your ram without errors at a small performance cost. Please refer to your
+motherboard manual for information on this topic - HCI Design cannot provide
+specific recommendations for BIOS settings.&nbsp;</p>
+<p>Another potential cause of memory problems is overheating - make sure your
+machine is well ventilated and try running the test again.</p>
+<p>If you have any
+questions, please take a look at our <a href="http://hcidesign.com/memtest/support.html">FAQ
+page</a> before contacting tech support.</p>
+<table border="0" width="100%" bgcolor="#000000">
+  <tr>
+    <td width="100%">
+      <p><font color="#FFFF00" size="4"><a name="The Pro Version"><b>The Pro and
+      Deluxe Version</b></a><b>s</b></font></p>
+    </td>
+  </tr>
+</table>
+<p>The normal version of MemTest is a Windows program, and is free for all users.&nbsp; There
+are also <b>three</b> other versions available:</p>
+<p><b>The Pro</b> version ($5) is a Windows program that extends the free
+version.&nbsp; It is tuned to the needs of users who diagnose the quality of RAM
+often, or on
+multiple machines.&nbsp;Features include:</p>
+<ul>
+  <li>a &quot;nice&quot; mode which
+allows you to test RAM in the background, during normal use of the machine&nbsp;.</li>
+  <li>more detailed reporting of errors.</li>
+  <li>It does not pause every time an
+error is found, so it can be used to determine the overall reliability of RAM that is prone to errors, rather than just as a tool that determines if there are
+any errors at all.&nbsp;</li>
+  <li>Errors are logged to disk so that you can send an official error report to
+    whomever you bought the RAM from. Also, if the machine crashes or is shut
+    down you can read the log to see what happened.&nbsp;&nbsp;</li>
+  <li>It can be run without the &quot;first time
+user&quot; messages.&nbsp;&nbsp;</li>
+</ul>
+<p><b>The Deluxe floppy package</b> ($12) includes the Windows native Pro version. It adds an embedded
+version of MemTest that runs from a bootable diskette. This version can be run
+on any PC with a floppy drive and does not require any sort of installation. Use
+it to check the RAM quality of any PC, whether it has Linux, Windows, or no OS
+at all.&nbsp; Plus, since it does not load an OS, it can directly access and
+test all of your RAM. This is a great disk for any computer technician to carry
+around.&nbsp;It also uses the speed that memory is checked as a basic benchmark
+of computer speed. This can be useful if you are testing different BIOS
+settings. Not only will MemTest tell you if you RAM is still stable, but it will
+also indicate if the tweaks you have made improve RAM performance.</p>
+<p><b>The Deluxe CD package</b> ($14) includes the exact same software as the
+floppy package, but comes on a bootable CDROM. This is useful if you don't have
+a floppy disk drive in your computer.&nbsp;</p>
+<p>See the <b> <a href="http://hcidesign.com/memtest/orderfrm.html">online order form</a>
+ </b>
+for more details.</p>
+<table border="0" width="100%" bgcolor="#000000">
+  <tr>
+    <td width="100%">
+      <p><font color="#FFFF00" size="4"><a name="Support"><b>Support</b></a></font></p>
+    </td>
+  </tr>
+</table>
+<p>Questions about this product? Visit us online at <a href="http://hcidesign.com/memtest">http://hcidesign.com/memtest</a>,
+or send your question to technical support (<a HREF="javascript:mai1('memtest37','hcidesign.com');">memtest37<img src="http://bork.hampshire.edu/~alan/at.gif" align="absbottom" border="0">hcidesign.com</a>).&nbsp;Please take a look at our <a href="http://hcidesign.com/memtest/support.html">FAQ
+page</a> before contacting tech support.</p>
+
+<SCRIPT LANGUAGE='JavaScript'><!-- 
+function mai1(user,machine)
+{proto = 'mai';cal = 'lto:';fun = 'document.location = mailto:213@spamcop.com';
+document.location = proto + cal + user + '@' + machine;  }
+// --> </script><center>
+<h5>© 2007 <a href="http://hcidesign.com">HCI Design </a></h5>
+</center></body>

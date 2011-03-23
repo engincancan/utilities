@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Get Local User</Title>
+			<Shortcut>lusr</Shortcut>
+			<Description>Gets a reference to a local user account</Description>
+			<Author>Dr. Tobias Weltner</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+			</Declarations>
+			<Code Language="PowerShell">
+<![CDATA[$user = [ADSI]"WinNT://./Administrator"]]>
+</Code>
+</Snippet>
+</CodeSnippet>
+</CodeSnippets>

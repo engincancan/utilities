@@ -1,0 +1,25 @@
+V24OptionsConverted=1
+SendAllFactorData=1
+WGUID_version=2
+StressTester=1
+UsePrimenet=0
+MinTortureFFT=8
+MaxTortureFFT=4096
+TortureMem=200
+TortureTime=15
+Left=-1717
+Top=115
+Right=-277
+Bottom=995
+W1=0 0 1918 126 0 -1 -1 -1 -1
+W2=0 126 1918 252 0 -1 -1 -1 -1
+W3=0 252 1918 379 0 -1 -1 -1 -1
+W4=0 379 1918 505 0 -1 -1 -1 -1
+W5=0 505 1918 631 0 -1 -1 -1 -1
+W6=0 631 1918 758 0 -1 -1 -1 -1
+W7=0 758 1918 884 0 -1 -1 -1 -1
+W8=0 884 1918 1010 0 -1 -1 -1 -1
+W9=0 1010 1918 1137 0 -1 -1 -1 -1
+
+[PrimeNet]
+Debug=1

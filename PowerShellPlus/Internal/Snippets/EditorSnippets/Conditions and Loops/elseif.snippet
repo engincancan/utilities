@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>elseif</Title>
+			<Shortcut>elseif</Shortcut>
+			<Description>adds an elseif block to an existing if block</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.com</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>Expression to evaluate</ToolTip>
+					<Default>$a</Default>
+				</Literal>
+				<Literal>
+					<ID>param2</ID>
+					<ToolTip>comparison operator</ToolTip>
+					<Default>-eq</Default>
+				</Literal>
+				<Literal>
+					<ID>param3</ID>
+					<ToolTip>value to compare</ToolTip>
+					<Default>$b</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="1"><![CDATA[elseif ($param1$ $param2$ $param3$) {
+
+} ]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

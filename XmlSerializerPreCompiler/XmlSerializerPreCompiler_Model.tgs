@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ProjectSupport>
+  <SupportedProjects>
+    <ProjectName>TestTypes</ProjectName>
+    <ProjectName>XmlSerializerPreCompiler</ProjectName>
+  </SupportedProjects>
+</ProjectSupport>

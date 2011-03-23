@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<DSSettings xmlns="http://tempuri.org/DSSettings.xsd">
+  <settings>
+    <ConnectionPage>0</ConnectionPage>
+    <SqlServer>kastria</SqlServer>
+    <SqlDatabase>master</SqlDatabase>
+    <SqlTrusted>false</SqlTrusted>
+    <SqlLoginName>einvoice_reporting</SqlLoginName>
+    <OleDbConnect />
+    <OraDataSource />
+    <OraLoginName />
+    <OraMSDriver>false</OraMSDriver>
+    <MdiParentMaximized>false</MdiParentMaximized>
+    <MdiChildMaximized>false</MdiChildMaximized>
+  </settings>
+</DSSettings>

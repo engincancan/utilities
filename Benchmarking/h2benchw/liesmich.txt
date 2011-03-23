@@ -1,0 +1,265 @@
+H2benchw -- by Harald Bögeholz & Lars Bremer / c't Magazin für Computertechnik
+Copyright (C) 2009 Heise Zeitschriften Verlag GmbH & Co. KG
+==============================================================================
+
+
+H2benchw läuft als Konsolenanwendung (auf der Kommandozeile) unter
+Windows NT, 2000, XP und Vista. Es greift direkt auf die Festplatte
+zu, indem es sie als Physical Device öffnet und benötigt daher
+Administratorrechte. Um nachvollziehbare Ergebnisse zu erhalten,
+sollten Sie keine anderen Windows-Anwendungen laufen lassen und den
+Rechner während der Messung nicht anrühren. (Sicherheitshalber erhöht
+der Benchmark seine Prozesspriorität auf das maximal Mögliche.)
+
+H2benchw erwartet auf der Kommandozeile die Nummer der zu testenden
+Festplatte sowie Optionen, die die durchzuführenden Tests festlegen.
+Ein Aufruf ohne Parameter liefert einen kurzen Hilfstext. ALLE
+OPTIONEN MÜSSEN ALS KLEINBUCHSTABEN ANGEGEBEN WERDEN; die Reihenfolge
+ist beliebig. Der wichtigste Parameter ist die Nummer der zu testenden
+Festplatte. Die erste physikalische Platte hat die Nummer 0, die
+nächste die Nummer 1 und so weiter. Gibt man auf der Kommandozeile nur
+die Plattennummer ohne Optionen an, so zeigt H2benchw die Kapazität und
+die vom Betriebssystem gemeldete logische Geometrie (CHS-Angabe,
+Zylinder, Köpfe, Sektoren) der Platte an. Bei IDE-Platten erfährt man
+außerdem Typenbezeichnung, Seriennummer und Firmware-Version. Wenn
+mehrere Platten im Rechner sind, empfiehlt es sich, H2benchw zunächst
+einmal nur so aufzurufen, um sicherzustellen, dass man die richtige
+Platte trifft.
+
+Da H2benchw unter Umgehung der Partitionierung direkt auf die Platte
+zugreift, würden beim Beschreiben der Platte alle Daten verlorengehen.
+Daher führt er alle Benchmarks normalerweise nur lesenderweise durch.
+Erst die Option "-!" aktiviert auch die Schreibmessungen. Diese
+wiederum funktionieren aus Sicherheitsgründen nur, wenn keine
+Partitionen auf der Platte sind.
+
+H2benchw hat fünf Komponenten: die Messung der Interface-Transferrate,
+ein Test der Datenintegrität, die Zonenmessung, die Messung der
+mittleren Zugriffszeit (Seek) und die Messung der Anwendungsprofile.
+Eine genauere Erläuterung zu den einzelnen Messungen finden Sie im
+Platten-Karussell (c't 8/02, S. 194ff, c't 15/02, S. 150ff, c't 23/02,
+S. 160ff).
+
+Die Option "-c <n>" (-c steht aus historischen Gründen für "Coretest")
+veranlasst die Messung der Interface-Transferrate bei <n> % der
+Kapazität der Platte. Üblicherweise gibt man hier 0 an, da die meisten
+Festplatten dort am schnellsten sind.
+
+Die Option "-d <n>" testet die Datenintegrität, wobei die ersten <n>
+Sektoren der Platte vollständig geprüft werden, der Rest nur
+stichprobenartig. Statt einer Zahl darf auch das Wort "max" stehen,
+dann testet H2bench die gesamte Platte. Mehr dazu im unten stehenden
+Abschnitt "Test der Datenintegrität".
+
+Die Option "-z" aktiviert die Zonenmessung.
+
+Die Option "-s" aktiviert die Seek-Messung.
+
+Die Option "-p" misst die Anwendungsprofile. ACHTUNG: Diese Messung
+ist inzwischen nicht mehr aussagekräftig, da sich einerseits das
+Zugriffsverhalten von Betriebssystem und Anwendungen geändert hat und
+andererseits einige Annahmen, auf denen die Profile basieren, heute
+nicht mehr gelten. So liefern einige Teilprofile mit aktuellen
+Festplatten unrealistisch überhöhte Messergebnisse.
+
+Die Option "-a" schließlich führt alle Teilmessungen durch; sie
+entspricht der Kombination von "-c", "-z", "-p" und "-s" sowie "-d
+20480", falls -! angegeben.
+
+Die Option "-w <Dateiname>" legt einen <Dateinamen> für das
+Abspeichern der Ergebnisse fest. H2benchw hängt daran die
+Erweiterungen ".txt" und ".ps" an und erzeugt zwei Ergebnisdateien.
+Die .txt-Datei ist eine ASCII-Datei, die im vorderen Teil die
+Ergebnisse im Klartext zusammenfasst. Der hintere Teil enthält die
+Detailergebnisse der Zonenmessung. VORSICHT: Die Zonenmessung hat für
+Lesen und Schreiben jeweils bis zu 1000 Messpunkte. Die Ergebnisse
+stehen jeweils in einer eigenen Zeile, um die Auswertung mit anderen
+Programmen zu ermöglichen. Bevor Sie auf die Idee kommen, die
+.txt-Datei auszudrucken, sollten Sie mit einem Texteditor den hinteren
+Teil der Datei abschneiden, da Sie sonst über 30 Seiten "Zahlenmüll"
+zu Papier bringen.
+
+Für den Ausdruck ist die .ps-Datei gedacht. Sie enthält alle
+Messergebnisse auf einer DIN-A4-Seite zusammengefasst im
+PostScript-Format. Besitzer eines PostScript-Druckers können die Datei
+einfach so zum Drucker schicken, beispielsweise mit dem Befehl
+
+copy /b Dateiname.ps prn
+
+Wer über einen weniger edlen Drucker verfügt oder die Ergebnisse am
+Bildschirm betrachten möchte, kann den Freeware-Interpreter
+GhostScript beziehungsweise das Programm GhostView zur Anzeige
+benutzen. Die Programme sind für praktisch alle Betriebssysteme
+verfügbar; die aktuellen Versionen sind unter
+http://www.cs.wisc.edu/~ghost/ zu finden.
+
+Zu Dokumentationszwecken dienen die folgenden Optionen: "-tt", gefolgt
+von der Bezeichnung der Festplatte (in Anführungszeichen), legt den
+"Titel" des Tests fest, "-ts" ist für zusätzliche Angaben wie das
+Speichermedium bei Wechselmedien vorgesehen. Entsprechend gibt es
+"-tb" für das BIOS, "-tc" für die CPU, "-tm" für das Motherboard,
+"-ta" für den verwendeten (SCSI- oder EIDE-) Adapter. Da letztere
+Komponenten häufig gleichbleiben, kann man die Angaben auch in
+Environment-Variablen unterbringen, zum Beispiel per SET-Befehl über
+eine Batchdatei oder unter XP in der Systemsteuerung unter
+System->Erweitert->Umgebungsvariablen. Die entsprechenden Variablen
+heißen H2BTITLE, H2BMEDIUM, H2BBIOS, H2BCPU, H2BBOARD und H2BADAPTER
+und kommen dann zum Zuge, wenn auf der Kommandozeile keine
+antsprechenden Angaben vorliegen.
+
+Meist braucht man beim Test dann nur noch den Namen der Festplatte
+anzugeben. Ein typischer Aufruf lautet beispielsweise
+
+h2benchw 1 -a -! -tt "Festplatte 42" -w 42
+
+Dies führt mit der zweiten am Rechner angeschlossenen Festplatte alle
+Messungen durch und speichert die Ergebnisse in den beiden Dateien
+"42.txt" und "42.ps".
+
+
+Test der Datenintegrität
+========================
+
+H2benchw ist ursprünglich ein reiner Benchmark, der nur überprüft, wie
+schnell Daten gelesen und geschrieben werden, aber nicht, ob dies auch
+fehlerfrei erfolgt. Anlässlich der Überschreitung der 128-GByte-Grenze
+bei IDE-Platten ist ein Test der Datenintegrität hinzugekommen (Option
+-d <n>). Dieser arbeitet wie folgt:
+
+Zunächst schreibt er in die ersten <n> Sektoren der Platte bestimmte
+Testmuster (alle verschieden!). Die Voreinstellung für <n> ist 20480
+Sektoren (= 10 MByte). Statt <n> darf auch "max" für die gesamte
+Kapazität angegeben werden. Anschließend schreibt H2bench jeweils fünf
+Sektoren in der Umgebung aller LBAs, die eine Zweierpotenz sind (dies
+sind bei Treiberbugs oft die kritischen Adressen). Schließlich
+schreibt der Test noch eine gewisse Zeit lang (Voreinstellung: 10
+Sekunden) eine pseudo-zufällige Folge von Sektoren. Die Dauer dieser
+letzten Phase lässt sich mit der Option -dt <s> verändern, wobei der
+Zahlenwert <s> die Dauer in Sekunden angibt.
+
+Nach einer kurzen Verschnaufpause liest H2bench alle zuvor
+geschriebenen Testdaten wieder ein und überprüft sie. Wenn dabei ein
+Fehler auftritt, bricht er ab und gibt Ort des Fehlers, Soll- und
+Istwert aus. Die Testdaten sind so beschaffen, dass im ersten Dword
+(Offset 0) eines jeden Sektors dessen LBA steht. Wenn hier bei der
+Überprüfung ein Fehler entdeckt wird, bedeutet dies sehr
+wahrscheinlich, dass ein Sektor an die falsche Adresse geschrieben
+wurde, und man kann anhand des Ist-Wertes erkennen, welcher dies war.
+
+ACHTUNG: Wenn man den Integritätstest ohne die Option -!, also nur
+lesenderweise aufruft, muss natürlich zuvor die entsprechende Menge
+Testdaten geschrieben worden sein, sonst erhält man eine
+Fehlermeldung.
+
+
+Sprachoptionen
+==============
+
+H2benchw "spricht" derzeit drei Sprachen: Deutsch, Englisch und
+Niederländisch. Die Kommandozeilenoption "-deutsch" wählt deutsche
+Texte, die Option "-english" englische und die option "-nederlands"
+niederländische.
+
+Über die Environment-Variable H2BLANGUAGE lässt sich die Sprache
+voreinstellen, um sich die Angabe der entsprechenden
+Kommandozeilenoption zu ersparen. Zweckmäßigerweise setzt man sie in
+der Systemsteuerung. Beispiele:
+
+SET H2BLANGUAGE=deutsch     für Deutsch
+
+SET H2BLANGUAGE=english     für Englisch
+
+SET H2BLANGUAGE=nederlands  für Niederländisch
+
+
+Bekannte Einschränkungen
+========================
+
+H2benchw arbeitet intern mit 32-Bit-Werten für die logischen
+Blockadressen (LBA). Es wird daher mit Platten über 2 TByte nicht
+funktionieren (hoffentlich habe ich nicht irgendwo ein Vorzeichenbit
+vergessen und schon einen 1-TByte-Bug eingebaut ;-) ).
+
+Auf manchen Mehrprozessor- oder Dual-Core-Systemen hat H2benchw
+Probleme mit der Zeitmessung. Bei Zweifeln an der Korrektheit der
+Ergebnisse sollte man die Messung auf einem Einprozessorsystem
+wiederholen.
+
+
+Fragen
+======
+
+Fragen zu H2benchw richten Sie bitte per E-Mail (in deutscher oder
+englischer Sprache) an bo@ct.heise.de (Harald Bögeholz). Ich werde mir
+erlauben, Fragen, die in den untenstehenden FAQ beantwortet sind, zu
+ignorieren.
+
+
+FAQ:
+====
+
+?  Der Benchmark H2benchw bricht immer mit einem Lesefehler ab.
+
+:  Wenn physikalische Defekte vorliegen, kann die aktuelle Version von
+   H2benchw die Dauertransferraten nicht messen. Mit etwas Glück
+   funktioniert aber eine der anderen Messungen noch, wenn sie den
+   defekten Sektor zufällig nicht trifft.
+
+
+?  Beim Aufruf des Festplatten-Benchmarks H2benchw erhalte ich immer
+   die Fehlermeldung, dass der Timer nicht monoton laufe, und das
+   Programm bricht ab.
+
+:  Bei manchen Chipsätzen arbeitet der Systemtimer fehlerhaft: Die
+   unteren Bits "hoppeln", sodass es gelegentlich den Anschein hat als
+   laufe die Zeit rückwärts. H2bench überprüft daher zu Beginn die
+   Zuverlässigkeit des Timers. 
+
+   Die genannte Fehlermeldung wurde bisher unter Windows 2000
+   beobachtet, NT und XP scheinen die Fehler zu kompensieren. Wenn Sie
+   diese Fehlermeldung unter Windows XP erhalten, wäre ich für eine
+   E-Mail mit einer genauen Beschreibung des Systems dankbar an
+   bo@ct.heise.de.
+
+   Einstweilen können Sie mit der Option "-Tnocheck" die
+   Timerüberprüfung unterdrücken, nicht aber das von ihr festgestellte
+   Problem! H2benchw müsste dann zwar im großen und ganzen auch
+   richtige Werte liefern, aber verlassen kann man sich darauf nicht.
+
+
+?  Ich kann Ihre Messungen nicht nachvollziehen: Mit meiner
+   SCSI-Platte erhalte ich wesentlich niedrigere
+   Datenübertragungsraten beim Schreiben als Sie.
+
+:  Wir schalten bei SCSI-Platten für unsere Messungen grundsätzlich
+   den Schreibcache ein. Ohne diesen erzielen die Platten beim
+   Schreiben nur die halbe Übertragungsrate wie beim Lesen. 
+
+
+?  Ich habe Version 2.15 und Version 2.3 von H2benchw. Welche ist
+   neuer?
+
+:  Die Nummer nach dem Punkt ist nicht als Dezimalbruch sondern als
+   fortlaufende Nummer zu verstehen. Nach 2.9 kam also 2.10 (zwei
+   punkt zehn), danach 2.11 und so weiter. Die aktuelle Version hat
+   die Nummer 3.13.
+
+
+?  Meine IDE-Platte erzielt an der Onboard-EIDE-Schnittstelle meines
+   Boards eine maximale Übertragungsrate von etwa 7 MByte/s [teilweise
+   sogar nur 2 MByte/s], obwohl sie laut c't-Testbericht wesentlich
+   schneller sein sollte. An einem anderen System bringt sie dagegen
+   die volle Leistung.
+
+:  Vermutlich läuft die Platte im PIO-Mode statt im (Ultra-)DMA-Mode.
+   Überprüfen Sie dies im Gerätemanager (Windows 2000/XP)
+   beziehungsweise mit dem Programm dmacheck (NT), das Sie bei
+   Microsoft zum Download finden sollten.
+
+
+?  Warum gibt H2bench bei meinem IDE-RAID-Array nicht die
+   Typenbezeichnungen und Seriennummern der Festplatten aus?
+
+:  Das Auslesen des ATA-Konfigurationssektors ist momentan nur für
+   einzelne IDE-Platten implementiert. Auf manchen Hostadaptern
+   funktioniert es auch für Einzelplatten nicht, sorry.

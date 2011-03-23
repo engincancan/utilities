@@ -1,0 +1,28 @@
+<Configuration>
+  <CompletionStatisticsManager />
+  <EditorManager>
+    <RecentFiles>
+      <File id="A1BCB61E-359F-46C8-89E1-26CD7E356880/d:UnknownPath/f:ProfilerCallback.cpp" caret="11023" visual-x="0" visual-y="10488" />
+      <File id="147EF91E-C9E4-4E8E-B5E9-5D99D8DB3769/f:MainForm.cs" caret="66348" visual-x="0" visual-y="25990" />
+    </RecentFiles>
+  </EditorManager>
+  <FileStructureView>
+    <AutoScrollToSource>False</AutoScrollToSource>
+    <TrackCaretLocation>False</TrackCaretLocation>
+  </FileStructureView>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <ReFormatCode>
+    <OptimizeUsings>False</OptimizeUsings>
+    <RemoveRedundantThis>False</RemoveRedundantThis>
+    <ShortenReferences>False</ShortenReferences>
+    <DecorateModifiers>False</DecorateModifiers>
+  </ReFormatCode>
+  <SharedSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </SharedSolutionDisabledTemplatesManager>
+  <UserSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </UserSolutionDisabledTemplatesManager>
+</Configuration>

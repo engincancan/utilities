@@ -1,0 +1,41 @@
+<dotnetbarlayout version="6" zorder="11,5,4,12">
+  <docksite size="0" dockingside="Top" />
+  <docksite size="275" dockingside="Bottom">
+    <dockcontainer orientation="1" w="0" h="0">
+      <barcontainer w="1046" h="272">
+        <bar name="Bar6" dockline="0" layout="2" dockoffset="0" state="2" dockside="4" visible="true">
+          <items>
+            <item name="DockContainerItem4" origBar="" origPos="-1" pos="0" />
+          </items>
+        </bar>
+      </barcontainer>
+    </dockcontainer>
+  </docksite>
+  <docksite size="0" dockingside="Left" />
+  <docksite size="0" dockingside="Right">
+    <dockcontainer orientation="1" w="0" h="0">
+      <barcontainer w="218" h="347">
+        <bar name="BarVariables" dockline="0" layout="2" dockoffset="0" state="2" dockside="2" visible="false">
+          <items>
+            <item name="DockContainerItem3" origBar="" origPos="-1" pos="0" />
+          </items>
+        </bar>
+      </barcontainer>
+      <barcontainer w="218" h="697">
+        <bar name="BarProperties" dockline="0" layout="2" dockoffset="135" state="2" dockside="2" visible="false">
+          <items>
+            <item name="DockContainerItem1" origBar="" origPos="-1" pos="0" />
+          </items>
+        </bar>
+      </barcontainer>
+    </dockcontainer>
+  </docksite>
+  <bars>
+    <bar name="mainmenubar" dockline="0" layout="0" dockoffset="0" state="2" dockside="3" visible="true" />
+    <bar name="Bar5" dockline="1" layout="0" dockoffset="0" state="2" dockside="3" visible="false" />
+    <bar name="Bar3" dockline="1" layout="0" dockoffset="0" state="2" dockside="3" fpos="218,280,421,50" visible="true" />
+    <bar name="Bar1" dockline="1" layout="0" dockoffset="424" state="2" dockside="3" visible="true" />
+    <bar name="Bar4" dockline="1" layout="0" dockoffset="539" state="2" dockside="3" visible="true" />
+    <bar name="Bar2" dockline="0" layout="0" dockoffset="0" state="2" dockside="2" visible="true" />
+  </bars>
+</dotnetbarlayout>

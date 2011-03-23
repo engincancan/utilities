@@ -1,0 +1,2 @@
+microsoft.jscript.dll
+microsoft.vsa.dll

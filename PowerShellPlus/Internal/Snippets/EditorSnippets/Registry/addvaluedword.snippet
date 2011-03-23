@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Add DWORD value</Title>
+			<Shortcut />
+			<Description>adds a DWORD value to a registry key</Description>
+			<Author />
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>Parent Key</ToolTip>
+					<Default>HKCU:\Software\Testing\</Default>
+				</Literal>
+				<Literal>
+					<ID>param2</ID>
+					<ToolTip>Name of new value</ToolTip>
+					<Default>MyValue</Default>
+				</Literal>
+				<Literal>
+					<ID>param3</ID>
+					<ToolTip>the value to assign</ToolTip>
+					<Default>12</Default>
+				</Literal>
+				<Literal>
+					<ID>param4</ID>
+					<ToolTip>data type of value</ToolTip>
+					<Default>DWord</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="-1"><![CDATA[New-ItemProperty "$param1$" -Name "$param2$" -Value $param3$ -PropertyType "$param4$"]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,2 @@
+psexec \\Server -u username -p password qwinsta
+psexec \\Server -u username -p password logoff ID /v

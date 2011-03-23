@@ -1,0 +1,324 @@
+2011-02-03 03:01:01,562 [22] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 03:06:01,563 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 03:11:01,574 [22] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 03:16:01,575 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 03:21:01,586 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 03:26:01,587 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 03:31:01,598 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 03:36:01,600 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 03:41:01,601 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 03:46:01,612 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 03:51:01,613 [14] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 03:56:01,624 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 04:01:01,625 [9] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 04:06:01,638 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 04:11:01,639 [9] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 04:16:01,640 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 04:21:01,651 [20] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 04:26:01,652 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 04:31:01,663 [19] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 04:36:01,665 [21] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 04:41:01,675 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 04:46:01,676 [20] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 04:51:01,677 [19] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 04:56:01,688 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 05:01:01,689 [9] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 05:06:01,701 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 05:11:01,702 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 05:16:01,713 [14] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 05:21:01,715 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 05:26:01,716 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 05:31:01,727 [22] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 05:36:01,728 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 05:41:01,740 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 05:46:01,741 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 05:51:01,752 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 05:56:01,753 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 06:01:01,765 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 06:06:01,766 [14] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 06:11:01,768 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 06:16:01,779 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 06:21:01,780 [9] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 06:26:01,791 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 06:31:01,792 [19] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 06:36:01,793 [20] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 06:41:01,805 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 06:46:01,806 [19] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 06:51:01,817 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 06:56:01,818 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 07:01:01,829 [9] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 07:06:01,830 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 07:11:01,841 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 07:16:01,843 [14] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 07:21:01,844 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 07:26:01,855 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 07:31:01,856 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 07:36:01,867 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 07:41:01,868 [19] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 07:46:01,881 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 07:51:01,882 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 07:56:01,883 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 08:01:01,894 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 08:06:01,895 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 08:11:01,906 [14] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 08:16:01,908 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 08:21:01,919 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 08:26:01,920 [9] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 08:31:01,921 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 08:36:01,932 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 08:41:01,933 [20] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 08:46:01,945 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 08:51:01,946 [9] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 08:56:01,957 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 09:01:01,958 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 09:06:01,959 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 09:11:01,970 [14] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 09:16:01,971 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 09:21:01,983 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 09:26:01,984 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 09:31:01,995 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 09:36:01,996 [19] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 09:41:02,008 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 09:46:02,009 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 09:51:02,011 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 09:56:02,022 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 10:01:02,023 [14] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 10:06:02,034 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 10:11:02,035 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 10:16:02,036 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 10:21:02,048 [9] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 10:26:02,049 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 10:31:02,060 [9] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 10:36:02,061 [19] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 10:41:02,071 [9] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 10:46:02,072 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 10:51:02,084 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 10:56:02,085 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 11:01:02,086 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 11:06:02,097 [14] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 11:11:02,098 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 11:16:02,109 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 11:21:02,110 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 11:26:02,123 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 11:31:02,124 [20] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 11:36:02,125 [21] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 11:41:02,136 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 11:46:02,137 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 11:51:02,148 [20] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 11:56:02,150 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 12:01:02,161 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 12:06:02,162 [14] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 12:11:02,162 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 12:16:02,173 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 12:21:02,174 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 12:26:02,186 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 12:31:02,187 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 12:36:02,198 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 12:41:02,199 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 12:46:02,210 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 12:51:02,211 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 12:56:02,222 [14] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 13:01:02,224 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 13:06:02,225 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 13:11:02,236 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 13:16:02,237 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 13:21:02,249 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 13:26:02,250 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 13:31:02,252 [9] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 13:36:02,263 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 13:41:02,264 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 13:46:02,275 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 13:51:02,276 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 13:56:02,287 [14] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 14:01:02,289 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 14:06:02,300 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 14:11:02,301 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 14:16:02,302 [9] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 14:21:02,313 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 14:26:02,314 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 14:31:02,326 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 14:36:02,327 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 14:41:02,338 [19] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 14:46:02,339 [20] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 14:51:02,340 [21] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 14:56:02,351 [20] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 15:01:02,352 [19] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 15:06:02,365 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 15:11:02,366 [19] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 15:16:02,378 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 15:21:02,379 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 15:26:02,380 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 15:31:02,391 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 15:36:02,393 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 15:41:02,404 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 15:46:02,405 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 15:51:02,406 [9] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 15:56:02,417 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 16:01:02,417 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 16:06:02,429 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 16:11:02,430 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 16:16:02,441 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 16:21:02,442 [14] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 16:26:02,453 [6] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 16:31:02,454 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 16:36:02,466 [18] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 16:41:02,467 [19] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-03 16:46:02,468 [20] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-04 11:16:23,850 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-04 11:16:23,918 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-02-04 11:36:59,689 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-04 11:36:59,758 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-02-04 11:37:04,608 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.UnauthorizedAccessException: Access to the path 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\HibernatingRhinos.NHibernate.Profiler.Client.exe.ldat' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-02-04 11:37:21,060 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-04 11:37:21,126 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-02-23 21:13:08,492 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-23 21:13:08,558 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-02-23 21:13:27,531 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.UnauthorizedAccessException: Access to the path 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\HibernatingRhinos.NHibernate.Profiler.Client.exe.ldat' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-02-23 21:13:27,742 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.UnauthorizedAccessException: Access to the path 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\HibernatingRhinos.NHibernate.Profiler.Client.exe.ldat' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-02-23 21:13:27,743 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.IO.IOException: The process cannot access the file 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\HibernatingRhinos.Profiler.BackEnd.dll' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-02-23 21:13:27,758 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.IO.IOException: The process cannot access the file 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\NHProf.exe' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-02-23 21:13:37,672 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-23 21:13:37,740 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-02-23 21:18:37,669 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-23 21:23:37,671 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 10:43:12,566 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 10:43:12,637 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-02-25 10:43:18,878 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.UnauthorizedAccessException: Access to the path 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\HibernatingRhinos.NHibernate.Profiler.Client.exe.ldat' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-02-25 10:43:19,095 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.UnauthorizedAccessException: Access to the path 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\HibernatingRhinos.NHibernate.Profiler.Client.exe.ldat' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-02-25 10:43:19,107 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.IO.IOException: The process cannot access the file 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\NHProf.exe' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-02-25 10:43:28,859 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 10:43:28,927 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-02-25 10:48:28,856 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 10:53:28,867 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 10:58:28,868 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 11:03:28,869 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 11:08:28,880 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 11:13:28,881 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 11:18:28,892 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 11:23:28,893 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 11:28:28,904 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 11:33:28,905 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 11:38:28,916 [17] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 11:43:28,918 [22] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-02-25 11:48:28,919 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-01 10:45:53,971 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-01 10:45:54,037 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-03-01 10:46:01,322 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.UnauthorizedAccessException: Access to the path 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\HibernatingRhinos.NHibernate.Profiler.Client.exe.ldat' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-03-01 10:46:11,110 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-01 10:46:11,184 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-03-13 11:30:09,031 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-13 11:30:09,099 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-03-13 11:30:15,009 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.UnauthorizedAccessException: Access to the path 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\HibernatingRhinos.NHibernate.Profiler.Client.exe.ldat' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-03-13 11:30:25,135 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-13 11:30:25,202 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-03-21 09:05:11,770 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-21 09:05:11,841 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-03-21 09:05:16,638 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.UnauthorizedAccessException: Access to the path 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\HibernatingRhinos.NHibernate.Profiler.Client.exe.ldat' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-03-21 09:05:16,854 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.UnauthorizedAccessException: Access to the path 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\HibernatingRhinos.NHibernate.Profiler.Client.exe.ldat' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-03-21 09:05:16,867 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.IO.IOException: The process cannot access the file 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\NHProf.exe' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-03-21 09:05:27,583 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-21 09:05:27,651 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-03-21 09:05:41,018 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-21 09:05:41,086 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-03-21 15:49:16,407 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-21 15:49:16,519 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-03-21 15:54:16,414 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-21 15:59:16,415 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-21 16:04:16,426 [16] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-21 16:09:16,427 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-21 16:14:16,429 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-21 16:19:16,440 [8] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-21 16:24:16,441 [15] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-22 14:41:24,108 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-22 14:41:24,208 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-03-22 14:41:30,251 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.UnauthorizedAccessException: Access to the path 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\HibernatingRhinos.NHibernate.Profiler.Client.exe.ldat' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-03-22 14:41:30,837 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.UnauthorizedAccessException: Access to the path 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\HibernatingRhinos.NHibernate.Profiler.Client.exe.ldat' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-03-22 14:41:30,840 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.IO.IOException: The process cannot access the file 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\HibernatingRhinos.Profiler.BackEnd.dll' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-03-22 14:41:30,848 [1] WARN  HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper [(null)] - Could not copy file!
+System.IO.IOException: The process cannot access the file 'C:\Users\James\AppData\Local\NHibernate Profiler\AutoUpdate\NHProf.exe' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at HibernatingRhinos.Profiler.Client.Services.AutoUpdateHelper.CopyCurrentFiles()
+2011-03-22 14:41:40,883 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2011-03-22 14:41:40,951 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler

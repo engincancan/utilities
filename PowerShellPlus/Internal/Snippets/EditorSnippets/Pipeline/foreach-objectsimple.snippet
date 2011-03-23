@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>foreach-object</Title>
+			<Shortcut>foreo</Shortcut>
+			<Description>inserts a foreach-object pipeline segment</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.com</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>Access properties of pipeline object</ToolTip>
+					<Default>Something</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="-1"><![CDATA[| Foreach-Object { $_.$param1$ } ]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

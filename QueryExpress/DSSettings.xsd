@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema id="DSSettings" targetNamespace="http://tempuri.org/DSSettings.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/DSSettings.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xsd:element name="DSSettings" msdata:IsDataSet="true">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element name="settings">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ConnectionPage" type="xsd:int" minOccurs="0" />
+							<xsd:element name="SqlServer" type="xsd:string" minOccurs="0" />
+							<xsd:element name="SqlDatabase" type="xsd:string" />
+							<xsd:element name="SqlTrusted" type="xsd:boolean" minOccurs="0" />
+							<xsd:element name="SqlLoginName" type="xsd:string" minOccurs="0" />
+							<xsd:element name="OleDbConnect" type="xsd:string" minOccurs="0" />
+							<xsd:element name="OraDataSource" type="xsd:string" minOccurs="0" />
+							<xsd:element name="OraLoginName" type="xsd:string" minOccurs="0" />
+							<xsd:element name="OraMSDriver" type="xsd:boolean" minOccurs="0" />
+							<xsd:element name="MdiParentMaximized" type="xsd:boolean" minOccurs="0" />
+							<xsd:element name="MdiChildMaximized" type="xsd:boolean" minOccurs="0" />
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

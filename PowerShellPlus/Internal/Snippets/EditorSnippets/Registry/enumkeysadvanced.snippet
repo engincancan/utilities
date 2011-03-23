@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Enumerate Subkeys w/o PowerShell Properties</Title>
+			<Shortcut />
+			<Description>enumerates all subkeys of a given registry key and eliminates the automatically inserted PowerShell properties.</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>Registry key to enumerate</ToolTip>
+					<Default>HKCU:\Software\Microsoft\Windows\CurrentVersion\Run</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="4"><![CDATA[$key = Get-Item '$param1$'
+$subkeys = Get-ItemProperty $key.PSPath
+foreach ($subkeyname in $key.property) {
+	"$subkeyname = $($subkeys.$subkeyname)"
+}]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

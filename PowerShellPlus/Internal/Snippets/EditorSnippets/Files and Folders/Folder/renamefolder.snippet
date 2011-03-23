@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Rename a folder</Title>
+			<Shortcut />
+			<Description>Renames a folder</Description>
+			<Author />
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>folder path to rename</ToolTip>
+					<Default>c:\folder\folder2</Default>
+				</Literal>
+				<Literal>
+					<ID>param2</ID>
+					<ToolTip>new foldername</ToolTip>
+					<Default>newname</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="-1"><![CDATA[Rename-Item $param1$ "$param2$"]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

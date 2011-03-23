@@ -1,0 +1,152 @@
+**************************************
+*  MSRC4Plugin - Release Notes
+**************************************
+
+The latest release notes, source, and DSM files are available here:
+
+http://home.comcast.net/~msrc4plugin
+
+Version 1.2.2 - 8/16/2006
+
+	* Removed SALTing of the key.  SALT broke Windows 2000 compatibility
+	* Removed REG version of the plugin.  There is no good reason left to no use NOREG.
+
+Version 1.2.1 - 7/10/2006
+
+    * Fixed Windows 2000 encryption problem
+    * Fixed missing password problem.
+
+Version 1.2.0 - 5/17/2006
+
+    * Further config window tweaks. Added enhanced search for the key file.
+    * Adjusted the size of the config dialog to fit better in 640X480.
+    * Fixed some problems with reverse connections.
+    * Plugin can be used with or without a key file. If no key file is found the plugin uses a hashed version of the VNC password.
+    * Added SALTing of the key for each session. This makes each session key unique. This also makes it incompatible with all earlier plugins. Key files are still valid.
+
+Version 1.1.8 - 6/3/2005
+
+	Fixed a bug in NoReg introduced in 1.1.7
+
+Version 1.1.7 - 5/21/2005
+
+	Minor code clean-ups
+	Some changes to allow for more automated builds
+
+Version 1.1.6 - 3/12/2005
+
+	Fixed errors on 95/98/98SE/ME/NT caused by 115 key container changes
+	Fixed problems getting environment variables in some cases.
+	Fix default registry keys missing, causing GenKey to fail on new installs.
+	Regression Tested back to 95 OSR2
+	Integrated crypto.exe into the plugin source.
+	Added testviewer.bat, testserver.bat, debug_on.reg, and debug_off.reg to the zip file.
+	Requires UltraVNC RC19-5 or greater
+
+Version 1.1.5 - 2/14/2005
+
+	Works with "Guest" account. (No longer uses a persistent key container)
+	Removed Delete Container button.
+	Requires UltraVNC RC19-5 or greater
+	Some additional buffer allocation checking
+	Code clean-ups and comments
+	Changed new key file name from rc4.txt to new_rc4.key (Microsoft messes with the txt extension)
+	Some additional error handling to insure non-encrypted connections can't be made if something fails
+	Updated the Copyright information
+
+Version 1.1.4 - 2/9/2005
+
+	Requires UltraVNC RC19-5 or greater
+	On-the-fly environment variables don't end up in the registry. See where this is going?
+	Added a check to see if we are Interactive or Service, and get the variables from "the right place"
+
+Version 1.1.3 - 2/8/2005
+
+	Requires UltraVNC RC19-5 or greater
+	Service couldn't find environment variables (%programfiles%), pull env variables from registry.
+	Check USER and SYSTEM environment variables.
+	Key not Found fixed.
+	REG and NoReg BOTH generate new keys as rc4.txt
+	REG wasn't initializing all the registry keys properly
+	Cleaned up some constants
+
+Version 1.1.2 - 1/26/2005
+
+	Requires UltraVNC RC19-5 or greater
+	Default of "Program Files" changed to %programfiles% (for non-english Windows)
+	Added a "Delete Container" button to the config dialog (delete corrupt container)
+	Fixed a minor bug in calls to the encryption API
+	Registry access defaults to READ access not Read/Write, except in the conf dialog.
+	Registry and _noreg versions of the plugin.
+
+
+Version 1.1.1 - 4/26/2004
+
+	Never had a chance...
+
+
+Version 1.1.0 - 3/8/2004
+
+	GUI supports 40, 56, and 128bit keys better
+	Better OS and API version detection
+	Better detection of MAX KEY size
+	Cleaned up registry problems
+	Changed Key Store from Default to MSRC4Plugin
+	Better error logging (for debugging)
+
+
+Version 1.0.9 - 1/6/2004
+
+	Now supports 40, 56, and 128bit keys
+	Supports 128bit on Windows 95 osr2 -> Windows 2003 (Win 95/98 require High Encryption Pack)
+	Log file is off by default.  Controlled by a registry key
+	Key file now contains a text field with the bit depth.  (Old key files are NOT compatible)
+	Better support for multi-threading
+	Better error handling.  (fails to load rather than allowing blank keys to be  used)
+	OS version detection to select the correct crypto provider
+	UPX'd the DLL (DSM) to shrink the size
+
+
+Version 1.0.6 - 1.0.8 - ??/??/??
+
+	Never saw the light of day....
+
+
+Version 1.0.5 - ??/??/??
+
+	128bit version (or something...)
+
+
+Version 1.0.4 - 10/2/2003 - Production Ready! No, really!
+
+	Fixed my finger fumble...;-)
+
+
+Version 1.0.3 - 10/1/2003 - Production Ready!
+
+	Corrected viewer crashes under stress
+	Finished the Configure Dialog text-boxes
+	Clean up some code.
+
+
+Version 1.0.2 - 9/15/2003
+
+	Corrected "Blank Key" generation problem.
+	Changed export/import key so that it actually works ;-)
+	Paths to the plugins are stored in the registry.
+
+
+
+	HKCU\Software\ORL\VNCViewer\DSMPlugins\MSRC4
+	HKLM\Software\ORL\VNCViewer\DSMPlugins\MSRC4
+	HKLM\Software\ORL\WinVNC3\DSMPlugins\MSRC4
+
+
+
+	STARTED to add a GUI to edit the paths/key file names
+
+
+Version 1.0.0 - 3/20/2003
+
+	Initial Release
+

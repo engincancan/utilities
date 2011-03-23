@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Search all help files</Title>
+			<Shortcut />
+			<Description>Searches all help files for a given keyword or pattern</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Code Language="PowerShell" Kind="17"><![CDATA[function Search-Help($search = $(Throw "Please specify search keyword(s)")) {
+	Write-Host -ForegroundColor Green "Finding help files..."
+	$topics = $(get-help * | Where-Object { 
+	Write-Host -ForegroundColor Yellow $_.name
+	$_.category -ne 'alias' 
+	})
+	Write-Host -ForegroundColor Green "Looking for keyword(s)..."
+	
+	foreach ($topic in $topics) {
+		Write-Host -ForegroundColor Yellow "Examining $($topic.name)..."
+		$text = Get-Help -full $topic.Name | Out-String
+		if ($text -match $search) {
+			$topic | select-object Name, Synopsis
+		}
+	}
+}
+
+Search-Help hashtable]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

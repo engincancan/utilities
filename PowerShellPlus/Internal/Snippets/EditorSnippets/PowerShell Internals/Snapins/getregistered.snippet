@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>List available snapins</Title>
+			<Shortcut />
+			<Description>Lists all registered snapins (registrered previusly with InstallUtil.exe). Listed snapins can be loaded with add-pssnapin.</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Code Language="PowerShell" Kind="1"><![CDATA[Get-PSSnapin -Registered
+]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Append text to file</Title>
+			<Shortcut />
+			<Description>appends a directory listing to a text file</Description>
+			<Author>Dr. Tobias Weltner http://www.powershell.de</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>param1</ID>
+					<ToolTip>File name to append information to</ToolTip>
+					<Default>filelist.txt</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="PowerShell" Kind="0"><![CDATA[Dir | Out-File -Append $param1$
+Dir C:\ | Out-File -Append $param1$
+.\$param1$]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

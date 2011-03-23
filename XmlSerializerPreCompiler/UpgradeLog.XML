@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="XmlSerializerPreCompiler">
+</Property><Property Name="Solution File" Value="C:\dev\tools\XmlSerializerPreCompiler\XmlSerializerPreCompiler.sln">
+</Property><Property Name="Date" Value="August 15, 2006">
+</Property><Property Name="Time" Value="16:04 PM">
+</Property></Properties><Event ErrorLevel="0" Project="XmlSerializerPreCompiler" Source="XmlSerializerPreCompiler\XmlSerializerPreCompiler.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="XmlSerializerPreCompiler" Source="XmlSerializerPreCompiler\XmlSerializerPreCompiler.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TestTypes" Source="TestTypes\TestTypes.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TestTypes" Source="TestTypes\TestTypes.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="XmlSerializerPreCompiler.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="XmlSerializerPreCompiler.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="XmlSerializerPreCompiler" Source="XmlSerializerPreCompiler\XmlSerializerPreCompiler.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TestTypes" Source="TestTypes\TestTypes.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
