@@ -20,7 +20,7 @@
           <a href="../tasks/index.html">Task Reference</a>
           <img alt="-&gt;" src="../images/arrow.gif" /> &lt;cvs-rtag&gt;</td>
         <td class="NavBar-Cell" align="right">
-                        v0.86-beta1</td>
+                        v0.91-alpha2</td>
       </tr>
     </table>
     <h1>&lt;cvs-rtag&gt;</h1>
@@ -228,7 +228,7 @@
           <td style="text-align: center;">
             <a href="../enums/NAnt.Core.Types.ManagedExecution.html">ManagedExecution</a>
           </td>
-          <td> Specifies whether the external program is a managed application which should be executed using a runtime engine, if configured. The default is <b>false</b>. </td>
+          <td> Specifies whether the external program should be treated as a managed application, possibly forcing it to be executed under the currently targeted version of the CLR. </td>
           <td style="text-align: center;">False</td>
         </tr>
         <tr>
@@ -281,30 +281,28 @@
       <li>
         <p>Tag NAnt sources remotely.</p>
         <pre class="code">
-&lt;cvs-rtag 
-    cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant" 
-    destination="."
-    module="nant"
-    tagname="v0_8_4"
-     /&gt;
-    </pre>
+            &lt;cvs-rtag 
+                cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant" 
+                destination="."
+                tag="v0_8_4"
+                 /&gt;
+                </pre>
       </li>
       <li>
         <p>Remove a tag from the remote repository.</p>
         <pre class="code">
-&lt;cvs-rtag 
-    cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant" 
-    destination="."
-    module="nant"
-    tagname="v0_8_4"
-    remove="true"
-     /&gt;
-    </pre>
+            &lt;cvs-rtag 
+                cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant" 
+                destination="."
+                tag="v0_8_4"
+                remove="true"
+                 /&gt;
+                </pre>
       </li>
     </ul>
     <h3>Requirements</h3>
     <div style="margin-left: 20px;">
-      <b>Assembly:</b> NAnt.SourceControlTasks (0.86.2898.0)
+      <b>Assembly:</b> NAnt.SourceControlTasks (0.91.3881.0)
             </div>
   </body>
 </html>

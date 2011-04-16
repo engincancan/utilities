@@ -20,7 +20,7 @@
           <a href="../tasks/index.html">Task Reference</a>
           <img alt="-&gt;" src="../images/arrow.gif" /> &lt;al&gt;</td>
         <td class="NavBar-Cell" align="right">
-                        v0.86-beta1</td>
+                        v0.91-alpha2</td>
       </tr>
     </table>
     <h1>&lt;al&gt;</h1>
@@ -228,7 +228,7 @@
           <td style="text-align: center;">
             <a href="../enums/NAnt.Core.Types.ManagedExecution.html">ManagedExecution</a>
           </td>
-          <td> Specifies whether the external program is a managed application which should be executed using a runtime engine, if configured. The default is <b>false</b>. </td>
+          <td> Specifies whether the external program should be treated as a managed application, possibly forcing it to be executed under the currently targeted version of the CLR. </td>
           <td style="text-align: center;">False</td>
         </tr>
         <tr>
@@ -299,28 +299,28 @@
       <li>
         <p> Create a library containing all icon files in the current directory. </p>
         <pre class="code">
-&lt;al output="MyIcons.dll" target="lib"&gt;
-    &lt;sources&gt;
-        &lt;include name="*.ico" /&gt;
-    &lt;/sources&gt;
-&lt;/al&gt;
-    </pre>
+            &lt;al output="MyIcons.dll" target="lib"&gt;
+                &lt;sources&gt;
+                    &lt;include name="*.ico" /&gt;
+                &lt;/sources&gt;
+            &lt;/al&gt;
+                </pre>
       </li>
       <li>
         <p> Create an executable assembly manifest from modules. </p>
         <pre class="code">
-&lt;al output="Client.exe" target="exe" main="Program.Main"&gt;
-    &lt;modules&gt;
-        &lt;include name="Client.netmodule" /&gt;
-        &lt;include name="Common.netmodule" /&gt;
-    &lt;/modules&gt;
-&lt;/al&gt;
-    </pre>
+            &lt;al output="Client.exe" target="exe" main="Program.Main"&gt;
+                &lt;modules&gt;
+                    &lt;include name="Client.netmodule" /&gt;
+                    &lt;include name="Common.netmodule" /&gt;
+                &lt;/modules&gt;
+            &lt;/al&gt;
+                </pre>
       </li>
     </ul>
     <h3>Requirements</h3>
     <div style="margin-left: 20px;">
-      <b>Assembly:</b> NAnt.DotNetTasks (0.86.2898.0)
+      <b>Assembly:</b> NAnt.DotNetTasks (0.91.3881.0)
             </div>
   </body>
 </html>

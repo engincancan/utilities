@@ -20,7 +20,7 @@
           <a href="../tasks/index.html">Task Reference</a>
           <img alt="-&gt;" src="../images/arrow.gif" /> &lt;cvs-export&gt;</td>
         <td class="NavBar-Cell" align="right">
-                        v0.86-beta1</td>
+                        v0.91-alpha2</td>
       </tr>
     </table>
     <h1>&lt;cvs-export&gt;</h1>
@@ -220,7 +220,7 @@
           <td style="text-align: center;">
             <a href="../enums/NAnt.Core.Types.ManagedExecution.html">ManagedExecution</a>
           </td>
-          <td> Specifies whether the external program is a managed application which should be executed using a runtime engine, if configured. The default is <b>false</b>. </td>
+          <td> Specifies whether the external program should be treated as a managed application, possibly forcing it to be executed under the currently targeted version of the CLR. </td>
           <td style="text-align: center;">False</td>
         </tr>
         <tr>
@@ -273,33 +273,33 @@
       <li>
         <p>Export the most recent NAnt sources from cvs.</p>
         <pre class="code">
-&lt;cvs-export 
-    destination="c:\src\nant\" 
-    cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant"  
-    module="nant" /&gt;
-    </pre>
+            &lt;cvs-export 
+                destination="c:\src\nant\" 
+                cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant"  
+                module="nant" /&gt;
+                </pre>
       </li>
       <li>
         <p> Export NAnt revision named <code>your_favorite_revision_here</code> to the folder <code>c:\src\nant\replacement_for_module_directory_name</code>. <warn xmlns="">**NOTE**</warn>: filesets names for the export task must be prefixed with the module name. This is different than other tasks. </p>
         <pre class="code">
-&lt;cvs-export 
-    destination="c:\src\nant\" 
-    cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant" 
-    module="nant"
-    revision="your_favorite_revision_here"
-    overridedir="replacement_for_module_directory_name"
-    recursive="false"&gt;
-    &lt;fileset&gt;
-        &lt;include name="nant/bin/NAnt.exe"/&gt;
-        &lt;include name="nant/bin/NAnt.exe.config"/&gt;
-    &lt;/fileset&gt;
-&lt;/cvs-export&gt;
-    </pre>
+            &lt;cvs-export 
+                destination="c:\src\nant\" 
+                cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant" 
+                module="nant"
+                revision="your_favorite_revision_here"
+                overridedir="replacement_for_module_directory_name"
+                recursive="false"&gt;
+                &lt;fileset&gt;
+                    &lt;include name="nant/bin/NAnt.exe"/&gt;
+                    &lt;include name="nant/bin/NAnt.exe.config"/&gt;
+                &lt;/fileset&gt;
+            &lt;/cvs-export&gt;
+                </pre>
       </li>
     </ul>
     <h3>Requirements</h3>
     <div style="margin-left: 20px;">
-      <b>Assembly:</b> NAnt.SourceControlTasks (0.86.2898.0)
+      <b>Assembly:</b> NAnt.SourceControlTasks (0.91.3881.0)
             </div>
   </body>
 </html>

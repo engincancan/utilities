@@ -20,7 +20,7 @@
           <a href="../tasks/index.html">Task Reference</a>
           <img alt="-&gt;" src="../images/arrow.gif" /> &lt;link&gt;</td>
         <td class="NavBar-Cell" align="right">
-                        v0.86-beta1</td>
+                        v0.91-alpha2</td>
       </tr>
     </table>
     <h1>&lt;link&gt;</h1>
@@ -41,6 +41,12 @@
           <td style="text-align: center;">file</td>
           <td> The output file. </td>
           <td style="text-align: center;">True</td>
+        </tr>
+        <tr>
+          <td valign="top">moduledefinition</td>
+          <td style="text-align: center;">file</td>
+          <td> The name of a module-definition file (.def) to be passed to the linker. </td>
+          <td style="text-align: center;">False</td>
         </tr>
         <tr>
           <td valign="top">options</td>
@@ -106,7 +112,7 @@
           <td style="text-align: center;">
             <a href="../enums/NAnt.Core.Types.ManagedExecution.html">ManagedExecution</a>
           </td>
-          <td> Specifies whether the external program is a managed application which should be executed using a runtime engine, if configured. The default is <b>false</b>. </td>
+          <td> Specifies whether the external program should be treated as a managed application, possibly forcing it to be executed under the currently targeted version of the CLR. </td>
           <td style="text-align: center;">False</td>
         </tr>
         <tr>
@@ -223,17 +229,17 @@
       <li>
         <p> Combine all object files in the current directory into <code>helloworld.exe</code>. </p>
         <pre class="code">
-&lt;link output="helloworld.exe"&gt;
-    &lt;sources&gt;
-        &lt;include name="*.obj" /&gt;
-    &lt;/sources&gt;
-&lt;/link&gt;
-    </pre>
+            &lt;link output="helloworld.exe"&gt;
+                &lt;sources&gt;
+                    &lt;include name="*.obj" /&gt;
+                &lt;/sources&gt;
+            &lt;/link&gt;
+                </pre>
       </li>
     </ul>
     <h3>Requirements</h3>
     <div style="margin-left: 20px;">
-      <b>Assembly:</b> NAnt.VisualCppTasks (0.86.2898.0)
+      <b>Assembly:</b> NAnt.VisualCppTasks (0.91.3881.0)
             </div>
   </body>
 </html>

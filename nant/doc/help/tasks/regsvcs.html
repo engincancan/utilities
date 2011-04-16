@@ -20,7 +20,7 @@
           <a href="../tasks/index.html">Task Reference</a>
           <img alt="-&gt;" src="../images/arrow.gif" /> &lt;regsvcs&gt;</td>
         <td class="NavBar-Cell" align="right">
-                        v0.86-beta1</td>
+                        v0.91-alpha2</td>
       </tr>
     </table>
     <h1>&lt;regsvcs&gt;</h1>
@@ -151,7 +151,7 @@
           <td style="text-align: center;">
             <a href="../enums/NAnt.Core.Types.ManagedExecution.html">ManagedExecution</a>
           </td>
-          <td> Specifies whether the external program is a managed application which should be executed using a runtime engine, if configured. The default is <b>false</b>. </td>
+          <td> Specifies whether the external program should be treated as a managed application, possibly forcing it to be executed under the currently targeted version of the CLR. </td>
           <td style="text-align: center;">False</td>
         </tr>
         <tr>
@@ -192,31 +192,31 @@
       <li>
         <p> Adds all public classes contained in <code>myTest.dll</code> to a COM+ application and produces the <code>myTest.tlb</code> type library. If the application already exists, it is overwritten. </p>
         <pre class="code">
-&lt;regsvcs action="FindOrCreate" assembly="myTest.dll" /&gt;
-    </pre>
+            &lt;regsvcs action="FindOrCreate" assembly="myTest.dll" /&gt;
+                </pre>
       </li>
       <li>
         <p> Adds all public classes contained in <code>myTest.dll</code> to <code>myTargetApp</code> and produces the <code>myTest.tlb</code> type library. If the application already exists, it is overwritten. </p>
         <pre class="code">
-&lt;regsvcs action="FindOrCreate" assembly="myTest.dll" application="myTargetApp" /&gt;
-    </pre>
+            &lt;regsvcs action="FindOrCreate" assembly="myTest.dll" application="myTargetApp" /&gt;
+                </pre>
       </li>
       <li>
         <p> Adds all public classes contained in <code>myTest.dll</code> to a COM+ application and produces the <code>myTest.tlb</code> type library. A new application is always created. </p>
         <pre class="code">
-&lt;regsvcs action="Create" assembly="myTest.dll" /&gt;
-    </pre>
+            &lt;regsvcs action="Create" assembly="myTest.dll" /&gt;
+                </pre>
       </li>
       <li>
         <p> Uninstalls the COM+ application contained in <code>myTest.dll</code>. </p>
         <pre class="code">
-&lt;regsvcs action="Uninstall" assembly="myTest.dll" /&gt;
-    </pre>
+            &lt;regsvcs action="Uninstall" assembly="myTest.dll" /&gt;
+                </pre>
       </li>
     </ul>
     <h3>Requirements</h3>
     <div style="margin-left: 20px;">
-      <b>Assembly:</b> NAnt.DotNetTasks (0.86.2898.0)
+      <b>Assembly:</b> NAnt.DotNetTasks (0.91.3881.0)
             </div>
   </body>
 </html>

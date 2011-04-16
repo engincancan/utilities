@@ -20,7 +20,7 @@
           <a href="../tasks/index.html">Task Reference</a>
           <img alt="-&gt;" src="../images/arrow.gif" /> &lt;cvs-checkout&gt;</td>
         <td class="NavBar-Cell" align="right">
-                        v0.86-beta1</td>
+                        v0.91-alpha2</td>
       </tr>
     </table>
     <h1>&lt;cvs-checkout&gt;</h1>
@@ -214,7 +214,7 @@
           <td style="text-align: center;">
             <a href="../enums/NAnt.Core.Types.ManagedExecution.html">ManagedExecution</a>
           </td>
-          <td> Specifies whether the external program is a managed application which should be executed using a runtime engine, if configured. The default is <b>false</b>. </td>
+          <td> Specifies whether the external program should be treated as a managed application, possibly forcing it to be executed under the currently targeted version of the CLR. </td>
           <td style="text-align: center;">False</td>
         </tr>
         <tr>
@@ -267,39 +267,39 @@
       <li>
         <p>Checkout NAnt.</p>
         <pre class="code">
-&lt;cvs-checkout 
-    destination="c:\src\nant\" 
-    cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant" 
-    module="nant" /&gt;
-    </pre>
+            &lt;cvs-checkout 
+                destination="c:\src\nant\" 
+                cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant" 
+                module="nant" /&gt;
+                </pre>
       </li>
       <li>
         <p> Checkout NAnt revision named <code>0_85</code> to the folder <code>c:\src\nant\v0.85</code>. </p>
         <pre class="code">
-&lt;cvs-checkout 
-    destination="c:\src\nant" 
-    cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant" 
-    module="nant"
-    revision="0_85"
-    overridedir="v0.85" /&gt;
-    </pre>
+            &lt;cvs-checkout 
+                destination="c:\src\nant" 
+                cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant" 
+                module="nant"
+                revision="0_85"
+                overridedir="v0.85" /&gt;
+                </pre>
         <p>So the nant module tagged with revision 0_85 will be checked out in the folder v0.85 under the working/ destination directory. <br xmlns=""></br>This could be used to work on different branches of a repository at the same time.</p>
       </li>
       <li>
         <p> Checkout NAnt with specified revision date to the folder <code>c:\src\nant\2003_08_16</code>. </p>
         <pre class="code">
-&lt;cvs-checkout 
-    destination="c:\src\nant\" 
-    cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant" 
-    module="nant"
-    date="2003/08/16"
-    overridedir="2003_08_16" /&gt;
-    </pre>
+            &lt;cvs-checkout 
+                destination="c:\src\nant\" 
+                cvsroot=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/nant" 
+                module="nant"
+                date="2003/08/16"
+                overridedir="2003_08_16" /&gt;
+                </pre>
       </li>
     </ul>
     <h3>Requirements</h3>
     <div style="margin-left: 20px;">
-      <b>Assembly:</b> NAnt.SourceControlTasks (0.86.2898.0)
+      <b>Assembly:</b> NAnt.SourceControlTasks (0.91.3881.0)
             </div>
   </body>
 </html>
