@@ -11,7 +11,9 @@ Installing the NDepend addin for Visual Studio 2010, 2008 or 2005
 
 1) Download the NDepend installation zip file 
 
-2) Unzip NDepend files anywhere on your system, preferably I %Program Files%\NDepend
+2) Unzip NDepend files anywhere on your system, however
+   ******   don't unzip files in '%ProgramFiles%\NDepend   ******
+   This will provoke problems because of Windows protection.
 
 3) Start NDepend.Install.VisualStudioAddin.exe
 

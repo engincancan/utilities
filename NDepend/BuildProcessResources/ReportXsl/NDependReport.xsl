@@ -37,6 +37,7 @@
                   .datacell_stat0 { color: #000055; background-color: #C0C0FF; text-align: right; }
                   .datacell_stat1 { color: #000055; background-color: #D0D0FF; text-align: right; }
                   .datacell_empty { color: #000055; background-color: #FFFFFF; text-align: right; }
+                  .datacell_redRestriction { color: #000055; ; font-weight: bold; background-color: #FFAAAA; text-align: left; }
                   .cql_ok { color: #000000; background-color: #A0FFA0; text-align: left; font-size: 10pt ; font-weight: bold}
                   .cql_warning { color: #000000; background-color: #FFFF70; text-align: left; font-size: 10pt ; font-weight: bold}
                   .cql_error { color: #FFFFFF; background-color: #FF0000; text-align: left; font-size: 10pt ; font-weight: bold}
@@ -110,7 +111,7 @@
     </A>
     <p></p>
     <img>
-      <xsl:attribute name="src">../../RetrieveFile.aspx?file=VisualNDependView.png&amp;label=<xsl:value-of select="/cruisecontrol/integrationProperties/CCNetLabel"/></xsl:attribute>
+      <xsl:attribute name="src">VisualNDependView.png</xsl:attribute>
     </img>
     <p></p>
     <p></p>
@@ -119,7 +120,7 @@
     </A>
     <p></p>
     <img>
-      <xsl:attribute name="src">../../RetrieveFile.aspx?file=AbstractnessVSInstability.png&amp;label=<xsl:value-of select="/cruisecontrol/integrationProperties/CCNetLabel"/></xsl:attribute>
+      <xsl:attribute name="src">AbstractnessVSInstability.png</xsl:attribute>
     </img>
     <p></p>
     <p></p>
@@ -137,7 +138,7 @@
     <div class="info">Blue : Assemblies of your application.</div>
     <div class="info">Yellow : Framework assemblies referenced by assemblies of your application.</div>
     <img>
-      <xsl:attribute name="src">../../RetrieveFile.aspx?file=ComponentDependenciesDiagram.png&amp;label=<xsl:value-of select="/cruisecontrol/integrationProperties/CCNetLabel"/></xsl:attribute>
+      <xsl:attribute name="src">ComponentDependenciesDiagram.png</xsl:attribute>
     </img>
     <p></p>
     <p></p>
@@ -198,14 +199,26 @@
   </xsl:template>
 
   <xsl:template match="TypeReferencement">
-    <table border="1" cellpadding="3" cellspacing="0" bordercolor="white">
-      <tr>
-        <td class="hdrcell_left">Type</td>
-        <td class="hdrcell_left">Uses...</td>
-        <td class="hdrcell_left">Is used by...</td>
-      </tr>
-      <xsl:apply-templates select="Type" />
-    </table>
+    <xsl:choose>
+      <xsl:when test="not(node())">
+        <div class="datacell_redRestriction">
+          If the code base analyzed has too many types, NDepend doesn't list Types Dependencies to avoid a too big report. The section Types Dependencies can be activated by unchecking the option: <br/>
+          <i>NDepend Project Properties &gt; Report &gt; Avoid too big report for large code base  &gt; Hide section Types Dependencies if...</i><br/>
+          It is recommended to use the NDepend interactive UI capabilities to browse large applications.<br/>
+        </div>
+      </xsl:when>
+      <xsl:otherwise>
+        <table border="1" cellpadding="3" cellspacing="0" bordercolor="white">
+          <tr>
+            <td class="hdrcell_left">Type</td>
+            <td class="hdrcell_left">Uses...</td>
+            <td class="hdrcell_left">Is used by...</td>
+          </tr>
+          <xsl:apply-templates select="Type" />
+        </table>
+
+      </xsl:otherwise>
+    </xsl:choose>
     <p></p>
   </xsl:template>
 
@@ -703,73 +716,107 @@
   </xsl:template>
 
   <xsl:template match="TypesMetrics">
-    <a HREF="http://www.NDepend.com/Metrics.aspx#RFT"    target="_blank">
-      <div class="subtitleref">rft: Response For Type</div>
-    </a>
-    <a HREF="http://www.NDepend.com/Metrics.aspx#LCOM"   target="_blank">
-      <div class="subtitleref">lcom: Lack of Cohesion Of Methods of a class</div>
-    </a>
-    <a HREF="http://www.NDepend.com/Metrics.aspx#ILCC"     target="_blank">
-      <div class="subtitleref">CC: Cyclomatic Complexity</div>
-    </a>
-    <a HREF="http://www.NDepend.com/Metrics.aspx#AfferentCoupling" target="_blank">
-      <div class="subtitleref">Ca: Afferent Coupling</div>
-    </a>
-    <a HREF="http://www.NDepend.com/Metrics.aspx#EfferentCoupling" target="_blank">
-      <div class="subtitleref">Ce: Efferent Coupling</div>
-    </a>
-    <a HREF="http://www.NDepend.com/Metrics.aspx#ABC"    target="_blank">
-      <div class="subtitleref">ABC: Association Between Classes</div>
-    </a>
-    <a HREF="http://www.NDepend.com/Metrics.aspx#NOC"    target="_blank">
-      <div class="subtitleref">NOC: Number Of Children</div>
-    </a>
-    <a HREF="http://www.NDepend.com/Metrics.aspx#DIT"    target="_blank">
-      <div class="subtitleref">DIT: Depth in Inheritence Tree</div>
-    </a>
-    <table border="1" cellpadding="3" cellspacing="0" bordercolor="white">
-      <tr>
-        <td class="hdrcell_left">Type</td>
-        <!--td class="hdrcell_rightb"><a HREF="http://www.NDepend.com/Metrics.aspx#RFT"    target="_blank">rft Method</a></td-->
-        <!--td class="hdrcell_rightb"><a HREF="http://www.NDepend.com/Metrics.aspx#RFT"   target="_blank">rft ILInst</a></td-->
-        <td class="hdrcell_right">
-          <a HREF="http://www.NDepend.com/Metrics.aspx#RANK"      target="_blank">rank</a>
-        </td>
-        <td class="hdrcell_right">
-          <a HREF="http://www.NDepend.com/Metrics.aspx#LCOM"      target="_blank">lcom</a>
-        </td>
-        <td class="hdrcell_right">
-          <a HREF="http://www.NDepend.com/Metrics.aspx#LCOM"  target="_blank">lcom(HS)</a>
-        </td>
-        <td class="hdrcell_rightb">
-          <a HREF="http://www.NDepend.com/Metrics.aspx#ILCC" target="_blank">CC</a>
-        </td>
-        <td class="hdrcell_right">
-          <a HREF="http://www.NDepend.com/Metrics.aspx#AfferentCoupling"     target="_blank">Ca</a>
-        </td>
-        <td class="hdrcell_right">
-          <a HREF="http://www.NDepend.com/Metrics.aspx#EfferentCoupling"     target="_blank">Ce</a>
-        </td>
-        <td class="hdrcell_right">
-          <a HREF="http://www.NDepend.com/Metrics.aspx#ABC"     target="_blank">ABC</a>
-        </td>
-        <td class="hdrcell_rightb"># Instance Methods</td>
-        <td class="hdrcell_rightb"># Static Methods</td>
-        <td class="hdrcell_rightb"># Prop</td>
-        <td class="hdrcell_rightb"># Fld</td>
-        <td class="hdrcell_rightb"># ILInst</td>
-        <td class="hdrcell_right">
-          <a HREF="http://www.NDepend.com/Metrics.aspx#NOC" target="_blank">NOC</a>
-        </td>
-        <td class="hdrcell_right">
-          <a HREF="http://www.NDepend.com/Metrics.aspx#DIT" target="_blank">DIT</a>
-        </td>
+    <xsl:choose>
+      <xsl:when test="not(node())">
+        <div class="datacell_redRestriction">
+          If the code base analyzed has too many types, NDepend doesn't list Types Metrics to avoid a too big report. The section Types Metrics can be activated by unchecking the option: <br/>
+          <i>NDepend Project Properties &gt; Report &gt; Avoid too big report for large code base  &gt; Hide section Types Metrics if...</i><br/>
+          It is recommended to use the NDepend interactive UI capabilities to browse large applications.<br/>
+        </div>
+      </xsl:when>
+      <xsl:otherwise>
+        <a HREF="http://www.NDepend.com/Metrics.aspx#RANK"   target="_blank">
+          <div class="subtitleref">rank: TypeRank (based on Google PageRank algo)</div>
+        </a>
+        <a HREF="http://www.NDepend.com/Metrics.aspx#LCOM"   target="_blank">
+          <div class="subtitleref">lcom/lcom HS: Lack of Cohesion Of Methods of a class (HS means Henderson-Sellers formula)</div>
+        </a>
+        <a HREF="http://www.NDepend.com/Metrics.aspx#CC"     target="_blank">
+          <div class="subtitleref">CC: Cyclomatic Complexity computed on source code</div>
+        </a>
+        <a HREF="http://www.NDepend.com/Metrics.aspx#ILCC"     target="_blank">
+          <div class="subtitleref">ILCC: Cyclomatic Complexity computed on IL code</div>
+        </a>
+        <a HREF="http://www.NDepend.com/Metrics.aspx#AfferentCoupling" target="_blank">
+          <div class="subtitleref">Ca: Afferent Coupling</div>
+        </a>
+        <a HREF="http://www.NDepend.com/Metrics.aspx#EfferentCoupling" target="_blank">
+          <div class="subtitleref">Ce: Efferent Coupling</div>
+        </a>
+        <a HREF="http://www.NDepend.com/Metrics.aspx#ABC"    target="_blank">
+          <div class="subtitleref">ABC: Association Between Classes</div>
+        </a>
+        <a HREF="http://www.NDepend.com/Metrics.aspx#NOC"    target="_blank">
+          <div class="subtitleref">NOC: Number Of Children</div>
+        </a>
+        <a HREF="http://www.NDepend.com/Metrics.aspx#DIT"    target="_blank">
+          <div class="subtitleref">DIT: Depth in Inheritance Tree</div>
+        </a>
+        <br>
+          <div class="cellreddoc">A pink cell means that its value belongs to the 15% highest values for its metric</div>
+        </br>
+        <table border="1" cellpadding="3" cellspacing="0" bordercolor="white">
+          <tr>
+            <td class="hdrcell_left">Type</td>
+            <td class="hdrcell_right">
+              <a HREF="http://www.NDepend.com/Metrics.aspx#RANK"      target="_blank">rank</a>
+            </td>
+            <td class="hdrcell_rightb">
+              <a HREF="http://www.NDepend.com/Metrics.aspx##NbILInstructions"   target="_blank"># ILInst</a>
+            </td>
+            <td class="hdrcell_rightb">
+              <a HREF="http://www.NDepend.com/Metrics.aspx#NbLinesOfCode" target="_blank"># lines of code</a>
+            </td>
+            <td class="hdrcell_rightb">
+              <a HREF="http://www.NDepend.com/Metrics.aspx#NbLinesOfComment" target="_blank"># lines of comment</a>
+            </td>
+            <td class="hdrcell_rightb">
+              <a HREF="http://www.NDepend.com/Metrics.aspx#PercentageComment" target="_blank">% comment</a>
+            </td>
+            <td class="hdrcell_right">
+              <a HREF="http://www.NDepend.com/Metrics.aspx#LCOM"      target="_blank">lcom</a>
+            </td>
+            <td class="hdrcell_right">
+              <a HREF="http://www.NDepend.com/Metrics.aspx#LCOM"  target="_blank">lcom(HS)</a>
+            </td>
+            <td class="hdrcell_rightb">
+              <a HREF="http://www.NDepend.com/Metrics.aspx#CC" target="_blank">CC</a>
+            </td>
+            <td class="hdrcell_rightb">
+              <a HREF="http://www.NDepend.com/Metrics.aspx#ILCC" target="_blank">ILCC</a>
+            </td>
+            <td class="hdrcell_right">
+              <a HREF="http://www.NDepend.com/Metrics.aspx#AfferentCoupling"     target="_blank">Ca</a>
+            </td>
+            <td class="hdrcell_right">
+              <a HREF="http://www.NDepend.com/Metrics.aspx#EfferentCoupling"     target="_blank">Ce</a>
+            </td>
+            <td class="hdrcell_right">
+              <a HREF="http://www.NDepend.com/Metrics.aspx#ABC"     target="_blank">ABC</a>
+            </td>
+            <td class="hdrcell_rightb"># Instance Methods</td>
+            <td class="hdrcell_rightb"># Static Methods</td>
+            <td class="hdrcell_rightb"># Prop</td>
+            <td class="hdrcell_rightb"># Fld</td>
+            <td class="hdrcell_right">
+              <a HREF="http://www.NDepend.com/Metrics.aspx#NOC" target="_blank">NOC</a>
+            </td>
+            <td class="hdrcell_right">
+              <a HREF="http://www.NDepend.com/Metrics.aspx#DIT" target="_blank">DIT</a>
+            </td>
 
-        <td class="hdrcell_leftb">Namespace</td>
+            <td class="hdrcell_leftb">Namespace</td>
 
-      </tr>
-      <xsl:apply-templates select="TypeMetric" />
-    </table>
+          </tr>
+
+          <xsl:apply-templates select="TypeMetric" />
+        </table>
+
+
+
+      </xsl:otherwise>
+    </xsl:choose>
+
     <p></p>
   </xsl:template>
 
@@ -1075,12 +1122,16 @@
       </xsl:choose>
     </xsl:for-each>
 
+    
+    
     <xsl:for-each select="Group">
       <xsl:variable name="groupname" select="@Name" />
 
       <xsl:for-each select="Query">
         <br/>
         <hr/>
+
+        <!-- Show Status-->
         <xsl:choose>
           <xsl:when test="@Status='Warn'">
             <div class="cql_warning">
@@ -1093,9 +1144,44 @@
             </div>
           </xsl:otherwise>
         </xsl:choose>
+
+
         <pre style="background: #F6F6F6">
           <xsl:value-of select="QueryHtml" disable-output-escaping="yes"/>
         </pre>
+
+        
+        <!-- Eventually show the selection view-->
+        <xsl:choose>
+          <xsl:when test="@SelectionViewFileName">
+            <IMG SRC="{@SelectionViewFileName}" />
+            <p />
+            <p />
+          </xsl:when>
+        </xsl:choose>
+
+
+        <!-- Eventually show list of items truncated text-->
+        <xsl:if test="@NbNodeMatched > @NbNodeListed and @NbNodeListed = @ContentTruncatedThreshold">
+          <div class="datacell_redRestriction">
+            The following list of <xsl:value-of select="@KindOfNode"/> is truncated and contains only the first <xsl:value-of select="@ContentTruncatedThreshold"/> <xsl:value-of select="@KindOfNode"/> of the <xsl:value-of select="@NbNodeMatched"/> <xsl:value-of select="@KindOfNode"/> matched. All matched <xsl:value-of select="@KindOfNode"/> could be listed in report by unchecking the option: <br/>
+            <i>
+              NDepend Project Properties &gt; Report &gt; Avoid too big report for large code base  &gt; Don't show more than <xsl:value-of select="@ContentTruncatedThreshold"/> matched items for a CQL rule violated
+            </i><br/>
+            It is recommended to use the NDepend interactive UI capabilities to browse a large list of matched <xsl:value-of select="@KindOfNode"/>.<br/>
+          </div>
+        </xsl:if>
+
+        <!-- Eventually show list of items too large-->
+        <xsl:if test="@NbNodeListed > @ContentTruncatedThreshold">
+          <div class="datacell_redRestriction">
+            The following list contains all <xsl:value-of select="@NbNodeMatched"/> <xsl:value-of select="@KindOfNode"/> matched. To avoid too big report, you can check the option: <br/>
+            <i>
+              NDepend Project Properties &gt; Report &gt; Avoid too big report for large code base  &gt; Don't show more than <xsl:value-of select="@ContentTruncatedThreshold"/> matched items for a CQL rule violated
+            </i><br/>
+            It is recommended to use the NDepend interactive UI capabilities to browse a large list of matched <xsl:value-of select="@KindOfNode"/>.<br/>
+          </div>
+        </xsl:if>
 
         <xsl:choose>
           <!-- and Rows garantee that there is a Rows element-->
@@ -1128,6 +1214,7 @@
                       </xsl:for-each>
                       <td class="datacell_empty"></td>
                     </xsl:when>
+
                     <xsl:otherwise>
                       <!-- Display a normal item row-->
                       <td class="datacell_left{$position mod 2}">
@@ -1153,6 +1240,6 @@
       </xsl:for-each>
     </xsl:for-each>
   </xsl:template>
-
+  
 </xsl:stylesheet>
 
